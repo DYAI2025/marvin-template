@@ -10,6 +10,7 @@ This directory contains integrations that extend MARVIN's capabilities. Each int
 |-------------|-------------|-------|
 | [Google Workspace](./google-workspace/) | Gmail, Calendar, Drive | `./.marvin/integrations/google-workspace/setup.sh` |
 | [Atlassian](./atlassian/) | Jira, Confluence | `./.marvin/integrations/atlassian/setup.sh` |
+| [Parallel Search](./parallel-search/) | Web search | `./.marvin/integrations/parallel-search/setup.sh` |
 
 ---
 
