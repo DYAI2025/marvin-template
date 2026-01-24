@@ -112,9 +112,28 @@ If they need to store API keys or secrets, tell them:
 
 If they say no or want to skip, say: "No problem! You can always add integrations later. Just type `/help` to see what's available, or ask me to help you set one up."
 
-### Step 6: First Session
-Once setup is complete, say:
-> "You're all set! From now on, start each session by typing `/marvin` and I'll give you a briefing. When you're done working, type `/end` to save everything. Let's try it now - type `/marvin` to begin!"
+### Step 6: Explain the Commands
+Before their first session, walk them through what they can do:
+
+> "Before we dive in, let me show you the commands you can use with me:"
+
+Show them this table in a friendly way:
+
+| Command | What It Does |
+|---------|--------------|
+| `/marvin` | **Start your day** - I'll give you a briefing with your priorities and what's on deck |
+| `/end` | **End your session** - I'll save everything we discussed so I remember next time |
+| `/update` | **Quick save** - Checkpoint your progress without ending the session |
+| `/commit` | **Git commits** - I'll review your code changes and help write good commit messages |
+| `/code` | **Open in IDE** - Opens this folder in Cursor, VS Code, or your preferred editor |
+| `/help` | **Get help** - See all commands and available integrations |
+
+Then explain:
+> "The most important ones to remember are `/marvin` to start and `/end` to finish. Everything in between is just natural conversation - ask me anything, tell me what you're working on, or have me help with tasks."
+
+### Step 7: First Session
+Once they understand the commands, say:
+> "Ready to try it out? Type `/marvin` and I'll give you your first briefing!"
 
 ---
 
