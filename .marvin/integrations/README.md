@@ -11,6 +11,7 @@ This directory contains integrations that extend MARVIN's capabilities. Each int
 | [Google Workspace](./google-workspace/) | Gmail, Calendar, Drive | `./.marvin/integrations/google-workspace/setup.sh` |
 | [Atlassian](./atlassian/) | Jira, Confluence | `./.marvin/integrations/atlassian/setup.sh` |
 | [Parallel Search](./parallel-search/) | Web search | `./.marvin/integrations/parallel-search/setup.sh` |
+| [Slack](./slack/) | Team messaging, search | `./.marvin/integrations/slack/setup.sh` |
 
 ---
 
@@ -104,7 +105,6 @@ After setup, try these commands with MARVIN:
 Here are some integrations we'd love to see:
 
 - **Notion** - Notes, wikis, databases
-- **Slack** - Team messaging
 - **Linear** - Issue tracking
 - **Figma** - Design files
 - **Airtable** - Spreadsheets and databases
