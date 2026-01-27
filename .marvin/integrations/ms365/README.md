@@ -37,10 +37,11 @@ The setup script will prompt for:
 ## Authentication
 
 Uses Microsoft's device flow authentication:
-1. First request opens a browser prompt
-2. Enter the device code shown
-3. Sign in with your Microsoft account
-4. Tokens are cached for future sessions
+1. Run `claude mcp` and select 'ms365'
+2. Choose 'Authenticate'
+3. Visit the URL shown and enter the device code
+4. Sign in with your Microsoft account
+5. Tokens are cached for future sessions
 
 No API keys or client secrets required.
 
@@ -78,9 +79,13 @@ MARVIN will always confirm before performing high-risk actions.
 - Run `claude mcp remove ms365 -s user` and re-run setup
 - Make sure Node.js is installed
 
-**Authentication issues:**
-- Clear cached tokens by removing `~/.ms365-mcp/` directory
-- Re-authenticate on next request
+**Authentication issues / stuck in a loop:**
+1. Run `claude mcp` in your terminal
+2. Find 'ms365' in the list and select it
+3. Choose 'Authenticate'
+4. Complete the device flow in your browser
+
+If that doesn't work, clear cached tokens: `rm -rf ~/.ms365-mcp/`
 
 **"Need admin approval" error (Work/School accounts):**
 

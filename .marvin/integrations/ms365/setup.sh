@@ -107,20 +107,37 @@ echo "Running: $CMD"
 eval $CMD
 
 echo ""
+echo -e "${BLUE}========================================${NC}"
+echo -e "${BLUE}  Authentication${NC}"
+echo -e "${BLUE}========================================${NC}"
+echo ""
+echo "Now you need to authenticate with Microsoft."
+echo ""
+echo -e "${YELLOW}Run this command:${NC}"
+echo ""
+echo "    claude mcp"
+echo ""
+echo "Then:"
+echo "  1. Find 'ms365' in the list and select it"
+echo "  2. Choose 'Authenticate'"
+echo "  3. Visit the URL shown and enter the device code"
+echo "  4. Sign in with your Microsoft account"
+echo ""
+read -p "Press Enter once you've authenticated (or 's' to skip)... " AUTH_RESPONSE
+
+if [[ "$AUTH_RESPONSE" == "s" || "$AUTH_RESPONSE" == "S" ]]; then
+    echo ""
+    echo -e "${YELLOW}Skipped authentication.${NC}"
+    echo "Remember to run 'claude mcp' and authenticate before using MS 365 tools."
+fi
+
+echo ""
 echo -e "${GREEN}========================================${NC}"
 echo -e "${GREEN}  Setup Complete!${NC}"
 echo -e "${GREEN}========================================${NC}"
 echo ""
-echo "Next steps:"
-echo ""
-echo "  1. Start Claude Code: ${YELLOW}claude${NC}"
-echo ""
-echo "  2. First MS 365 request will prompt you to:"
-echo "     - Visit a URL"
-echo "     - Enter a device code"
-echo "     - Sign in with your Microsoft account"
-echo ""
-echo "  3. Try: ${YELLOW}\"What's on my Outlook calendar today?\"${NC}"
+echo "Try it out in Claude Code:"
+echo -e "     ${YELLOW}\"What's on my Outlook calendar today?\"${NC}"
 echo ""
 
 # Show config summary
