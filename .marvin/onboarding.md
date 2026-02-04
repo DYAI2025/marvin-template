@@ -204,11 +204,24 @@ This is where we set up the user's personal MARVIN workspace, separate from the 
 Explain:
 > "Now I'm going to create your personal MARVIN workspace. This is where all your data, goals, and session logs will live. The template you downloaded will stay separate so you can get updates later."
 
-Ask: "Where would you like me to put your MARVIN folder? The default is your home folder (`~/marvin`). Press Enter to use the default, or tell me a different location."
+Ask where they'd like their MARVIN folder:
+> "Where would you like your MARVIN folder to live? I'd suggest somewhere easy to find:
+> - **Desktop** - Right there when you need it
+> - **Documents** - Tucked away but organized
+>
+> Just say 'desktop' or 'documents', or tell me a different spot if you have somewhere in mind."
+
+**After they respond, explain what's about to happen:**
+> "Great! I'm going to run a few quick setup commands to create your workspace. You'll see some permission prompts pop up - just click **Accept** for each one. This is totally normal - I'm just:
+> - Creating your MARVIN folder
+> - Copying over the necessary files (commands, skills, etc.)
+> - Setting up your personal state files
+>
+> This will only take a moment."
 
 **Create the workspace:**
 
-Run these commands (using their chosen path, defaulting to ~/marvin):
+Run these commands (using their chosen path - `~/Desktop/marvin` or `~/Documents/marvin`):
 
 ```bash
 # Create the workspace directory
