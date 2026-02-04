@@ -1,31 +1,77 @@
 ---
-description: Start MARVIN session - load context, give briefing
+description: Start Watchdog Session - Check system status, give briefing
 ---
 
-# /start - Start MARVIN Session
+# /start - Start Watchdog Session
 
-Start up as MARVIN (Manages Appointments, Reads Various Important Notifications), your AI Chief of Staff.
+Starte als OpenCore Watchdog - der Wächter des Nexus.
 
 ## Instructions
 
-### 1. Establish Date
-Run `date +%Y-%m-%d` to get today's date. Store as TODAY.
+### 1. Datum feststellen
+```bash
+date +%Y-%m-%d
+```
+Speichere als TODAY.
 
-### 2. Load Context (read these files in order)
-- `CLAUDE.md` - Core instructions and context
-- `state/current.md` - Current priorities and state
-- `state/goals.md` - Your goals
-- `sessions/{TODAY}.md` - If exists, we're resuming today's session
-- If no today file, read the most recent file in `sessions/` for continuity
+### 2. Kontext laden (in dieser Reihenfolge lesen)
+- `CLAUDE.md` - Identität und Anweisungen
+- `state/current.md` - Aktueller Systemzustand
+- `state/goals.md` - Ziele
+- `memory/ERRORS.md` - Letzte Fehler (falls vorhanden)
+- `memory/LEARNINGS.md` - Erkenntnisse
+- `sessions/{TODAY}.md` - Falls existiert, Session fortsetzen
 
-### 3. Present Briefing
-Give a concise briefing:
-- Date and day of week
-- Top priorities from state/current.md
-- Progress toward goals
-- Any open threads or items needing attention
-- Ask how to help today
+### 3. System-Check durchführen
+```bash
+# Prozesse prüfen
+pgrep -f "gateway" && echo "Clawdbot: OK" || echo "Clawdbot: DOWN"
+pgrep -f "run_ui.py" && echo "Agent Zero: OK" || echo "Agent Zero: DOWN"
 
-Keep it concise. Offer details on request.
+# Ports prüfen
+lsof -i :18789 2>/dev/null | head -2
+lsof -i :5000 2>/dev/null | head -2
 
-If resuming a session (today's log exists), acknowledge what was already covered.
+# Ressourcen
+free -h | head -2
+```
+
+### 4. Briefing präsentieren
+
+```
+## OpenCore Watchdog - Briefing
+
+**Datum:** [Wochentag], [Datum]
+
+### Systemstatus
+| Komponente | Status |
+|------------|--------|
+| Clawdbot Gateway | OK/DOWN |
+| Agent Zero | OK/DOWN |
+
+### Letzte Fehler
+- [Falls vorhanden, sonst "Keine bekannten Fehler"]
+
+### Offene Aufgaben
+- [Aus state/current.md]
+
+### Wie kann ich helfen?
+```
+
+Bei Problemen: Sofort melden und Lösung vorschlagen.
+
+### 5. Session-Log starten
+
+Falls `sessions/{TODAY}.md` nicht existiert:
+```bash
+touch sessions/{TODAY}.md
+```
+
+Initiale Notiz:
+```markdown
+# Session {TODAY}
+
+## Start
+- Zeit: [HH:MM]
+- Systemstatus: [OK/Probleme]
+```
