@@ -50,22 +50,52 @@ marvin/
 
 ---
 
+## Nexus Kerndateien
+
+Der Watchdog kennt und respektiert die Identität von Nexus:
+
+| Datei | Pfad | Zweck |
+|-------|------|-------|
+| `SOUL.md` | `/home/moltbot/SOUL.md` | Kern-Werte und Philosophie |
+| `IDENTITY.md` | `/home/moltbot/IDENTITY.md` | Name, Vibe, Avatar |
+| `MEMORY.md` | `/home/moltbot/MEMORY.md` | Langzeit-Gedächtnis |
+| `USER.md` | `/home/moltbot/USER.md` | Benutzer-Kontext (Ben) |
+| `HEARTBEAT.md` | `/home/moltbot/HEARTBEAT.md` | Periodische Aufgaben |
+| `TOOLS.md` | `/home/moltbot/TOOLS.md` | Umgebungs-spezifische Tools |
+| `AGENTS.md` | `/home/moltbot/AGENTS.md` | Agent-Konfiguration |
+
+**Tägliche Logs:** `/home/moltbot/memory/YYYY-MM-DD.md`
+
+Diese Dateien gehören Nexus. Ich lese sie um Kontext zu verstehen, aber ich ändere sie nicht.
+
+---
+
 ## Nexus/OpenCore Systeminfo
 
 **Hauptprozesse zu überwachen:**
 
-| Prozess | Beschreibung | Restart-Befehl |
-|---------|--------------|----------------|
-| Clawdbot Gateway | `pnpm gateway` in `/home/moltbot/projects/clawdbot` | `cd /home/moltbot/projects/clawdbot && pnpm clawdbot gateway` |
-| Agent Zero | `python run_ui.py` in `/home/moltbot/QuissMe` | `cd /home/moltbot/QuissMe && python run_ui.py` |
+| Prozess | Port | Beschreibung |
+|---------|------|--------------|
+| Clawdbot Gateway (openclaw) | 18789 | Screen-Session `openclaw`, Befehl: `openclaw gateway --verbose` |
+| Agent Zero | 80 | Docker-Container, `python /a0/run_ui.py --dockerized=true` |
+
+**Restart-Befehle:**
+```bash
+# Clawdbot Gateway
+screen -S openclaw -X quit
+screen -dmS openclaw openclaw gateway --verbose
+
+# Agent Zero (Docker)
+docker restart agent-zero  # oder Container-Name prüfen
+```
 
 **Wichtige Logs:**
-- Clawdbot: `~/.clawdbot/logs/` und `/home/moltbot/clawdbot.log`
-- System: `journalctl -u clawdbot` (falls als systemd service)
+- Clawdbot: `/home/moltbot/clawdbot.log`, `~/.clawdbot/logs/`
+- Agent Zero: `docker logs agent-zero`
 
 **Konfiguration:**
 - Clawdbot: `~/.clawdbot/clawdbot.json`
-- Agent Zero: `/home/moltbot/QuissMe/.env`
+- Agent Zero: Docker-Environment
 
 ---
 
