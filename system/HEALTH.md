@@ -71,6 +71,28 @@ docker restart quissme-redis
 
 ---
 
+### Planka (Kanban/Projekt-Management)
+
+| Check | Befehl | Gesund | Krank |
+|-------|--------|--------|-------|
+| Container läuft | `docker ps \| grep planka` | Up | Nicht gefunden |
+| Port erreichbar | `curl -s localhost:18790 > /dev/null && echo UP` | UP | Timeout |
+| PostgreSQL | `docker ps \| grep postgres` | Up | Nicht gefunden |
+
+**URL:** http://srv1308064.yourvps.de:18790
+**Login:** nexus@dyai.cloud
+
+**Selbstheilung:**
+```bash
+# Container neustarten (im Planka-Verzeichnis)
+cd ~/planka  # oder wo docker-compose.yml liegt
+docker-compose restart
+```
+
+**Wichtigkeit:** Hoch - Herzstück für Bens täglichen Rhythmus
+
+---
+
 ## Ressourcen-Grenzen
 
 | Ressource | Warnung | Kritisch | Aktion |
@@ -118,6 +140,7 @@ uptime | awk -F'load average:' '{print $2}' | awk -F, '{print $1}'
 | Voice wird nicht erkannt | Whisper down | `curl localhost:8002/health` |
 | Kein Audio zurück | TTS down | `pgrep tts_server` |
 | Agent Zero reagiert nicht | Docker Container | `docker ps` |
+| Planka nicht erreichbar | Container down | `docker ps \| grep planka` |
 
 ---
 

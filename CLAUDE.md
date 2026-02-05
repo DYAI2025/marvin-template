@@ -111,6 +111,7 @@ Details in `system/ARCHITECTURE.md` und `system/HEALTH.md`.
 | Whisper STT | 8002 | `uvicorn api:app` | Spracherkennung |
 | TTS Server | - | `tts_server.py` | Text-to-Speech |
 | Agent Zero | 80 | Docker | Autonomer Agent |
+| Planka | 18790 | Docker | Kanban/Projekt-Management |
 
 **Gesundheits-Checks:**
 ```bash
@@ -118,6 +119,7 @@ pgrep -f "openclaw-gateway"     # OpenClaw
 curl -s localhost:8002/health   # Whisper
 pgrep -f "tts_server.py"        # TTS
 docker ps | grep agent-zero     # Agent Zero
+curl -s localhost:18790 > /dev/null && echo "Planka: UP"  # Planka
 ```
 
 ---
