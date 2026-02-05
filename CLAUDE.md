@@ -112,6 +112,7 @@ Details in `system/ARCHITECTURE.md` und `system/HEALTH.md`.
 | TTS Server | - | `tts_server.py` | Text-to-Speech |
 | Agent Zero | 80 | Docker | Autonomer Agent |
 | Planka | 18790 | Docker | Kanban/Projekt-Management |
+| Claude Code | - | `claude` | AI-Assistent (Marvins "großer Bruder") |
 
 **Gesundheits-Checks:**
 ```bash
@@ -120,6 +121,7 @@ curl -s localhost:8002/health   # Whisper
 pgrep -f "tts_server.py"        # TTS
 docker ps | grep agent-zero     # Agent Zero
 curl -s localhost:18790 > /dev/null && echo "Planka: UP"  # Planka
+pgrep -x "claude" && echo "Claude Code: UP"  # Claude Code
 ```
 
 ---

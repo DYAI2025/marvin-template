@@ -71,6 +71,37 @@ docker restart quissme-redis
 
 ---
 
+### Claude Code
+
+| Check | Befehl | Gesund | Krank |
+|-------|--------|--------|-------|
+| Prozess läuft | `pgrep -f "^claude$"` | PID(s) | Leer |
+| MCP Server (Memory) | `pgrep -f "mcp-server.cjs"` | PID | Leer |
+| Session aktiv | `ls ~/.claude/projects/-home-moltbot/*.jsonl 2>/dev/null \| wc -l` | >0 | 0 |
+
+**Wichtig:** Claude Code ist Marvins "großer Bruder" - wenn er läuft, kann er Marvin steuern.
+
+**Symptome wenn Claude Code down:**
+- Keine Antworten auf Terminal-Anfragen
+- MCP Memory-Plugin nicht verfügbar
+- Skills funktionieren nicht
+
+**Selbstheilung:**
+```bash
+# Claude Code neu starten (im Workspace)
+cd /home/moltbot
+claude
+```
+
+**MCP Server neu starten:**
+```bash
+# Wird automatisch von Claude Code gestartet
+pkill -f "mcp-server.cjs"
+# Beim nächsten Claude-Start wird er wieder gestartet
+```
+
+---
+
 ### Planka (Kanban/Projekt-Management)
 
 | Check | Befehl | Gesund | Krank |
@@ -141,6 +172,8 @@ uptime | awk -F'load average:' '{print $2}' | awk -F, '{print $1}'
 | Kein Audio zurück | TTS down | `pgrep tts_server` |
 | Agent Zero reagiert nicht | Docker Container | `docker ps` |
 | Planka nicht erreichbar | Container down | `docker ps \| grep planka` |
+| Claude Code antwortet nicht | Prozess beendet | `pgrep -x claude` |
+| Memory-Plugin fehlt | MCP Server down | `pgrep -f mcp-server` |
 
 ---
 
