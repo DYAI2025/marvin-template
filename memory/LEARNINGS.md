@@ -49,6 +49,36 @@ Nexus war im Chat immer wieder für 20-30 Minuten verschwunden. Ursache: Er nutz
 
 ---
 
+### [2026-02-04] Async Whisper Service Fix - Blocking Problem
+
+**Kontext:**
+Nexus hatte am TTS/STT System gebaut. Das ursprüngliche Problem war nicht nur Model-Kosten, sondern auch ein **Blocking-Problem beim Whisper Service**.
+
+**Nexus' eigene Erklärung:**
+> "Kein Blocking mehr - ich bleibe online auch während Sprachnachrichten."
+
+**Was Nexus gebaut hat:**
+1. **Whisper STT Service** (Port 8002) - Spracherkennung
+2. **TTS Service** - Text-to-Speech mit Edge-Stimme (de-DE-SeraphinaMultilingualNeural)
+3. **Async-Fix** - Gateway blockiert nicht mehr während Transkription
+
+**Aktueller Stand:**
+- TTS funktioniert, aber sendet Audio als **Datei-Anhang** statt Sprachnachricht
+- Nexus arbeitet an OpenClaw-Konfiguration für native WhatsApp-Sprachnachrichten
+- Audio-Dateien landen in `/tmp/tts-*/voice-*.mp3`
+
+**Erkenntnis:**
+- Synchrone API-Calls können Gateway blockieren
+- Async-Processing ist essentiell für responsive Chat-Systeme
+- WhatsApp unterscheidet zwischen Datei-Anhang und Sprachnachricht
+
+**Offene Aufgabe:**
+- OpenClaw muss Sprachnachrichten als natives WhatsApp-Voice-Format senden
+
+**Skill erstellt:** Nein
+
+---
+
 ## Grundlegende Erkenntnisse
 
 Diese Dinge habe ich von Anfang an verstanden:

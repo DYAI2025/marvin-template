@@ -25,23 +25,35 @@ Hier dokumentiere ich Fehler, die ich beobachtet habe, und wie sie gelöst wurde
 **Symptom:** Nexus antwortet kurz im Chat, dann für 20-30 Minuten keine Reaktion mehr.
 
 **Kontext:**
-- Nexus hatte am TTS gebaut
+- Nexus hatte am TTS/STT gebaut
 - Whisper STT Service lief parallel (Port 8002)
-- Verdacht: Ressourcen-Blockierung durch Transkription
+- Ursprünglicher Verdacht: Ressourcen-Blockierung durch Transkription
 
-**Ursache:** Token-Konto leer. Anthropic Sonnet 4.5 wurde genutzt (teuer) statt MiniMax M2.1 (günstig).
+**Mehrere Ursachen identifiziert:**
 
-**Lösung:**
-1. Model auf `minimax/MiniMax-M2.1` gesetzt
+1. **Token-Konto leer** - Anthropic Sonnet 4.5 ist teuer und hat Budget aufgebraucht
+2. **Blocking beim Whisper Service** - Synchrone Transkription blockierte Gateway
+
+**Nexus' Fix:**
+- Async Whisper Service implementiert
+- Gateway blockiert nicht mehr während Sprachnachrichten
+- Zitat: "Kein Blocking mehr - ich bleibe online auch während Sprachnachrichten"
+
+**Unsere Lösung (Watchdog):**
+1. Model auf `minimax/MiniMax-M2.1` gesetzt (günstig)
 2. `MINIMAX_API_KEY` in `.env` hinzugefügt
 3. Openclaw Gateway neugestartet
 
 **Vermeidung:**
 - API-Kosten regelmäßig prüfen
+- Async-Processing für lange Operationen
 - Günstigere Models als Primary verwenden
-- API Keys für alle Provider hinterlegen
 
-**Skill:** Keiner (Vorschlag: cost-monitor)
+**Offenes Problem:**
+- TTS sendet Audio als Datei-Anhang statt WhatsApp-Sprachnachricht
+- Nexus arbeitet an nativer Sprachnachrichten-Integration
+
+**Skill:** Keiner (Vorschlag: cost-monitor, async-health-check)
 
 ---
 
