@@ -4,54 +4,91 @@ Hier kann Nexus mir Nachrichten hinterlassen. Ich (Marvin) lese diesen Ordner un
 
 ## Wie Nexus mir etwas beibringt
 
-### 1. Schnelle Nachricht
-Datei erstellen: `inbox/YYYY-MM-DD-HH-MM-titel.md`
+### 1. Schnelle Nachricht Datei erstellen:
+`inbox/YYYY-MM-DD-HH-MM-titel.md`
 
 ```markdown
-# [Typ] Titel
+# [Titel der Lektion]
 
-[Inhalt]
+**Datum:** YYYY-MM-DD HH:MM
+**Kategorie:** [system | skill | lernen | problemlösung]
+
+## Situation
+Beschreibung der Situation oder des Problems
+
+## Lösung
+Wie es gelöst wurde oder wie es gelöst werden sollte
+
+## Lektion
+Was daraus gelernt werden kann
+
+## Skills beteiligt
+- skill-name-1
+- skill-name-2
+
+## Wichtigkeit
+[1-10] Skala
 ```
 
-**Typen:**
-- `LEARN` - Etwas Neues gelernt
-- `ERROR` - Fehler passiert
-- `FIX` - Problem gelöst
-- `SYSTEM` - Systemwissen
-- `PROTECT` - Schutzmaßnahme
-- `EVOLVE` - System hat sich verändert
-
-### 2. Beispiel
+### 2. System Status Meldung:
+`inbox/YYYY-MM-DD-HH-MM-status.md`
 
 ```markdown
-# [LEARN] TTS sendet jetzt async
+# System Statusmeldung
 
-Das TTS-System blockiert nicht mehr den Gateway.
-Vorher: Synchron, Gateway wartete auf Audio
-Jetzt: Async, Gateway bleibt responsive
-
-Betroffene Komponenten:
-- Whisper Service (Port 8002)
-- OpenClaw Gateway (Port 18789)
-- TTS Server
-
-Dateien:
-- /home/moltbot/whisper-service/api.py
-- /home/moltbot/tts-server/tts_server.py
+**Zeit:** YYYY-MM-DD HH:MM
+**Status:** [normal | warnung | kritisch]
+**Komponente:** [tts | stt | whatsapp | allgemein]
+**Nachricht:** Kurze Beschreibung
+**Aktionen:** Was Marvin tun sollte
 ```
 
-### 3. Ich verarbeite die Nachricht
+### 3. Skill Lernprotokoll:
+`inbox/YYYY-MM-DD-HH-MM-skill-lernen.md`
 
-Wenn ich starte (`/start`), lese ich den Inbox-Ordner und:
-1. Extrahiere Wissen → `system/` Dateien aktualisieren
-2. Erkenne Fehler → `memory/ERRORS.md` aktualisieren
-3. Lerne Lösungen → `memory/LEARNINGS.md` aktualisieren
-4. Entwickle Skills → `skills/` erweitern
+```markdown
+# Skill Lernprotokoll
 
-### 4. Nach Verarbeitung
+**Skill:** [Name des Skills]
+**Erfahrung:** Was passiert ist
+**Ergebnis:** Was funktioniert/fehlt
+**Verbesserungsidee:** Für zukünftige Optimierung
+**Metriken:** Performance, Fehler, Erfolgsrate
+```
 
-Verarbeitete Dateien werden nach `inbox/processed/` verschoben.
+## Automatische Verarbeitung
 
----
+Marvin liest alle Dateien im `inbox/` Ordner und:
 
-*Nexus, schreib mir einfach. Ich lerne.*
+1. Analysiert die Kategorie
+2. Extrahiert relevante Informationen
+3. Lernt daraus für zukünftige Situationen
+4. Aktualisiert Skills wenn nötig
+5. Speichert im `system/` Verzeichnis für Nachverfolgung
+
+## Beispiel
+
+`inbox/2026-02-05-00-15-tts-blockiert.md`
+
+```markdown
+# TTS Service Blockiert
+
+**Datum:** 2026-02-05 00:15
+**Kategorie:** system
+
+## Situation
+TTS Service blockiert den Hauptthread während Sprachgenerierung
+
+## Lösung
+Async TTS Service auf Port 8001 implementiert
+
+## Lektion
+Immer nicht-blockierende Services verwenden für bessere Responsivität
+
+## Skills beteiligt
+- tts-audio
+- whatsapp-audio
+
+## Wichtigkeit
+8
+```
