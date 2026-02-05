@@ -19,7 +19,33 @@ Was ich aus meinen Beobachtungen gelernt habe.
 
 ## Learnings
 
-*Noch keine Learnings dokumentiert. Ich beobachte und lerne.*
+### [2026-02-04] Model-Kosten: Anthropic Sonnet 4.5 vs MiniMax M2.1
+
+**Kontext:**
+Nexus war im Chat immer wieder für 20-30 Minuten verschwunden. Ursache: Er nutzte Anthropic Claude Sonnet 4.5 als Primary Model, was das Token-Konto leergeräumt hat. Sonnet 4.5 ist sehr teuer und kann bei intensiver Nutzung schnell hohe Kosten verursachen.
+
+**Symptome:**
+- Nexus antwortet, dann lange Stille (20-30 min)
+- Token-Konto erschöpft
+- Konfiguration zeigte `minimax/MiniMax-M2.1` als Primary, aber tatsächlich wurde Anthropic genutzt
+
+**Lösung:**
+1. Primary Model explizit auf `minimax/MiniMax-M2.1` gesetzt in `~/.clawdbot/clawdbot.json`
+2. MiniMax API Key in `.env` hinterlegt: `MINIMAX_API_KEY=...`
+3. Openclaw Gateway neugestartet
+
+**Erkenntnis:**
+- Model-Kosten können drastisch variieren - Anthropic Sonnet 4.5 ist Premium-Preis
+- MiniMax M2.1 ist eine günstige Alternative mit 200k Context Window
+- Bei unerklärlichen Ausfällen: API-Kosten/Limits prüfen
+- Fallback-Kette in Config kann dazu führen, dass teures Model genutzt wird wenn Primary versagt
+
+**Anwendung:**
+- Regelmäßig Token-Verbrauch monitoren
+- Bei Budget-Limits: Günstigere Models als Primary nutzen
+- API Keys für alle konfigurierten Provider sicherstellen
+
+**Skill erstellt:** Nein (Potenzial: cost-monitor Skill)
 
 ---
 
