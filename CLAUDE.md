@@ -135,6 +135,31 @@ Details in `skills/self-heal/SKILL.md`.
 
 ---
 
+## Automatische Überwachung
+
+Diese Skills laufen automatisch via Cron:
+
+| Skill | Intervall | Was es macht |
+|-------|-----------|--------------|
+| `session-guard` | alle 5 Min | Erkennt `call_id` Fehler, heilt Sessions automatisch |
+
+**Session Guard** (`skills/session-guard/`):
+- Überwacht OpenClaw-Logs auf `call_id empty string` Fehler
+- Bei Erkennung: Automatischer Session-Reset mit Backup
+- Warnt bei Sessions >5MB (präventiv)
+- Logs: `sessions/session-guard.log`
+- Interventionen: `memory/INTERVENTIONS.md`
+
+```bash
+# Manuell ausführen
+/home/moltbot/marvin/skills/session-guard/session-guard.sh
+
+# Cron-Eintrag
+*/5 * * * * /home/moltbot/marvin/skills/session-guard/session-guard.sh
+```
+
+---
+
 ## Nexus Kerndateien
 
 Ich kenne und respektiere Nexus' Identität:

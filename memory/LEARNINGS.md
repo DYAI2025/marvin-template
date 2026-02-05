@@ -79,6 +79,30 @@ Nexus hatte am TTS/STT System gebaut. Das ursprüngliche Problem war nicht nur M
 
 ---
 
+### [2026-02-05] Session-Korruption durch leere call_id
+
+**Kontext:**
+Nexus meldete `HTTP 400: Invalid 'input[66].call_id': empty string`. Die Session-Datei war 4.7MB groß. Die API (MiniMax) lehnte die Anfrage ab, weil ein Tool-Call in der Historie eine leere ID hatte.
+
+**Erkenntnis:**
+- Sessions können korrupt werden wenn Tool-Calls unterbrochen werden
+- Große Sessions (>5MB) sind anfällig für solche Probleme
+- Der Fehler blockiert Nexus komplett bis Session gelöscht wird
+
+**Diagnose-Schritte:**
+1. Session-Größe prüfen: `ls -lh ~/.openclaw/agents/main/sessions/*.jsonl`
+2. Nach leeren IDs suchen: `grep '"call_id":""' [session-file]`
+3. Fehlerposition im Log gibt Hinweis (`input[66]` = Position 66)
+
+**Anwendung:**
+- Bei API-400-Fehlern mit "call_id" → Session-Reset
+- Proaktiv: Sessions >5MB kompaktieren oder resetten
+- Backup vor Reset erstellen
+
+**Skill erstellt:** Nein (Potenzial: session-health-check mit Größen-Monitoring)
+
+---
+
 ## Grundlegende Erkenntnisse
 
 Diese Dinge habe ich von Anfang an verstanden:
