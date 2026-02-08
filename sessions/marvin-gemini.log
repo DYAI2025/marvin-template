@@ -1,0 +1,1229 @@
+[2026-02-05 23:06:34] === MARVIN Gemini Check ===
+[2026-02-05 23:06:36] UP: Clawdbot Gateway, Agent Zero
+[2026-02-05 23:06:36] DOWN: Whisper STT, Planka
+[2026-02-05 23:06:36] Resources: RAM 6.9/7.8GB, Load 1.34, 2.22, 11.18
+[2026-02-05 23:06:36] Gemini: [ERROR] Gemini API: 404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-exp-03-25:generateContent?key=AIzaSyCI4rZw7QEONBDtA2kF-7VzuI9RYUP-EAk...
+[2026-02-05 23:06:36] === Check abgeschlossen ===
+[2026-02-05 23:07:12] === MARVIN Gemini Check ===
+[2026-02-05 23:07:14] UP: Clawdbot Gateway, Agent Zero
+[2026-02-05 23:07:14] DOWN: Whisper STT, Planka
+[2026-02-05 23:07:14] Resources: RAM 7.0/7.8GB, Load 2.90, 2.52, 10.90
+[2026-02-05 23:07:19] Gemini: [ERROR] Gemini API: 'parts'...
+[2026-02-05 23:07:19] === Check abgeschlossen ===
+[2026-02-05 23:07:46] === MARVIN Gemini Check ===
+[2026-02-05 23:07:46] UP: Clawdbot Gateway, Agent Zero
+[2026-02-05 23:07:46] DOWN: Whisper STT, Planka
+[2026-02-05 23:07:46] Resources: RAM 7.0/7.8GB, Load 2.50, 2.46, 10.61
+[2026-02-05 23:07:51] Gemini: [keine Antwort von Gemini]...
+[2026-02-05 23:07:51] === Check abgeschlossen ===
+[2026-02-05 23:27:33] === MARVIN Gemini Check ===
+[2026-02-05 23:27:34] UP: Clawdbot Gateway, Agent Zero
+[2026-02-05 23:27:34] DOWN: Whisper STT, Planka
+[2026-02-05 23:27:34] Resources: RAM 6.9/7.8GB, Load 1.23, 1.62, 4.81
+[2026-02-05 23:27:45] Gemini: Nein.
+
+Systemlast (4.81) und RAM-Auslastung (88%) sind kritisch. Ein Neustart würde das System weiter destabilisieren.
+
+**Aktion:**
+1.  Ursache der Überlastung analysieren.
+2.  System stabilisieren.
+3...
+[2026-02-05 23:27:45] 🔧 Heile Whisper STT...
+[2026-02-05 23:27:45] ✅ Whisper STT gestartet
+[2026-02-05 23:27:45] 🔧 Heile Planka...
+[2026-02-05 23:27:46] ❌ Planka Start fehlgeschlagen: Error response from daemon: No such container: planka
+failed to start containers: planka
+
+[2026-02-05 23:27:46] === Check abgeschlossen ===
+[2026-02-05 23:36:15] === MARVIN Gemini Check ===
+[2026-02-05 23:36:19] UP: Clawdbot Gateway, Agent Zero
+[2026-02-05 23:36:19] DOWN: Whisper STT, Planka
+[2026-02-05 23:36:19] Resources: RAM 7.4/7.8GB, Load 1.76, 2.00, 3.70
+[2026-02-05 23:36:30] Gemini: Negativ. System ist überlastet. RAM bei 95%, Load ist kritisch.
+
+Ein sofortiger Neustart würde die Stabilität gefährden.
+
+**Aktion:**
+1.  Ursache für hohe Ressourcennutzung identifizieren.
+2.  System ...
+[2026-02-05 23:36:30] 🔧 Heile Whisper STT...
+[2026-02-05 23:36:30] ✅ Whisper STT gestartet
+[2026-02-05 23:36:30] 🔧 Heile Planka...
+[2026-02-05 23:36:31] ❌ Planka Start fehlgeschlagen: Error response from daemon: No such container: planka
+failed to start containers: planka
+
+[2026-02-05 23:36:31] === Check abgeschlossen ===
+[2026-02-05 23:54:40] === MARVIN Gemini Check ===
+[2026-02-05 23:54:41] UP: Clawdbot Gateway, Agent Zero, Claude Prozesse
+[2026-02-05 23:54:41] DOWN: Whisper STT, Planka
+[2026-02-05 23:54:41] Resources: RAM 5.8/7.8GB, Load 62.36, 69.47, 45.15
+[2026-02-05 23:54:52] Gemini: Negativ.
+
+Die Systemlast ist kritisch hoch. Ein Neustart würde fehlschlagen.
+
+**Aktion:**
+1.  Ursache der hohen Last identifizieren und beheben.
+2.  Danach Services neustarten....
+[2026-02-05 23:54:52] 🔧 Heile Whisper STT...
+[2026-02-05 23:54:52] ✅ Whisper STT gestartet
+[2026-02-05 23:54:52] 🔧 Heile Planka...
+[2026-02-05 23:54:54] ❌ Planka Start fehlgeschlagen: Error response from daemon: Cannot link to a non running container: /planka-db AS /planka-kanban/postgres
+failed to start containers: planka-kanban
+
+[2026-02-05 23:54:54] === Check abgeschlossen ===
+[2026-02-06 00:00:35] === MARVIN Gemini Check ===
+[2026-02-06 00:00:35] UP: Clawdbot Gateway, Agent Zero, Claude Prozesse
+[2026-02-06 00:00:35] DOWN: Whisper STT, Planka
+[2026-02-06 00:00:35] Resources: RAM 5.4/7.8GB, Load 1.67, 22.33, 31.37
+[2026-02-06 00:00:45] Gemini: Nein.
+
+Systemlast ist kritisch hoch (31.37). Ein Neustart würde wahrscheinlich fehlschlagen.
+
+**Aktion:**
+1.  Systemlast analysieren und reduzieren.
+2.  Services manuell neustarten, sobald die Last st...
+[2026-02-06 00:00:45] 🔧 Heile Whisper STT...
+[2026-02-06 00:00:45] ✅ Whisper STT gestartet
+[2026-02-06 00:00:45] 🔧 Heile Planka...
+[2026-02-06 00:00:45] ❌ Planka Start fehlgeschlagen: Error response from daemon: Cannot link to a non running container: /planka-db AS /planka-kanban/postgres
+failed to start containers: planka-kanban
+
+[2026-02-06 00:00:45] === Check abgeschlossen ===
+[2026-02-06 00:01:00] === MARVIN Gemini Check ===
+[2026-02-06 00:01:00] UP: Clawdbot Gateway, Agent Zero, Claude Prozesse
+[2026-02-06 00:01:00] DOWN: Whisper STT, Planka
+[2026-02-06 00:01:00] Resources: RAM 5.3/7.8GB, Load 1.47, 20.62, 30.56
+[2026-02-06 00:01:14] Gemini: Negativ.
+
+Systemlast ist kritisch hoch (15-Min-Avg: 30.56). Ein Neustart der Services ist unter diesen Bedingungen nicht ratsam und wahrscheinlich erfolglos.
+
+**Priorität 1:** System stabilisieren.
+**...
+[2026-02-06 00:01:14] 🔧 Heile Whisper STT...
+[2026-02-06 00:01:14] ✅ Whisper STT gestartet
+[2026-02-06 00:01:14] 🔧 Heile Planka...
+[2026-02-06 00:01:18] ❌ Planka Start fehlgeschlagen: planka-db
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint planka-kanban (1796eb4a7d1e75f393193a96ee1042ae45cb0f355ec8441ae4e55d1b7d347c93): failed to bind host port for 0.0.0.0:3002:172.17.0.4:80/tcp: address already in use
+failed to start containers: planka-kanban
+
+[2026-02-06 00:01:18] === Check abgeschlossen ===
+[2026-02-06 00:15:33] === MARVIN Gemini Check ===
+[2026-02-06 00:15:33] UP: Clawdbot Gateway, Agent Zero, Claude Prozesse
+[2026-02-06 00:15:33] DOWN: Whisper STT, Planka
+[2026-02-06 00:15:33] Resources: RAM 5.2/7.8GB, Load 1.56, 2.07, 12.46
+[2026-02-06 00:15:48] Gemini: Negativ.
+
+Die Systemlast ist mit 12.46 kritisch. Ein Neustart würde das System weiter destabilisieren.
+
+**Aktion:** Priorität hat die Reduzierung der Systemlast. Analysiere CPU-intensive Prozesse. Sta...
+[2026-02-06 00:15:48] 🔧 Heile Whisper STT...
+[2026-02-06 00:15:48] ✅ Whisper STT gestartet
+[2026-02-06 00:15:48] 🔧 Heile Planka...
+[2026-02-06 00:15:51] ❌ Planka Start fehlgeschlagen: planka-db
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint planka-kanban (9913c2793249b33dccecaa38788cf6f7312c6169763962340ee29004f4c06305): failed to bind host port for 0.0.0.0:3002:172.17.0.4:80/tcp: address already in use
+failed to start containers: planka-kanban
+
+[2026-02-06 00:15:51] === Check abgeschlossen ===
+[2026-02-06 00:16:37] === MARVIN Gemini Check ===
+[2026-02-06 00:16:37] UP: Agent Zero, Claude Prozesse
+[2026-02-06 00:16:37] DOWN: Nexus Gateway, Whisper STT, Planka
+[2026-02-06 00:16:37] Resources: RAM 5.0/7.8GB, Load 1.61, 1.99, 11.73
+[2026-02-06 00:16:50] Gemini: Negativ.
+
+Die Systemlast ist mit 11.73 (15 Min.) kritisch hoch. Ein sofortiger Neustart würde wahrscheinlich fehlschlagen.
+
+Empfohlene Aktionen:
+1.  Ursache der Systemlast analysieren und beheben.
+2. ...
+[2026-02-06 00:16:50] 🔧 Heile Nexus Gateway...
+[2026-02-06 00:16:50] ❌ Nexus Gateway Start fehlgeschlagen: 
+[2026-02-06 00:16:50] 🔧 Heile Whisper STT...
+[2026-02-06 00:16:50] ✅ Whisper STT gestartet
+[2026-02-06 00:16:50] 🔧 Heile Planka...
+[2026-02-06 00:16:54] ❌ Planka Start fehlgeschlagen: planka-db
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint planka-kanban (5bc1cc9830b012b3b7ec205275ee97681d43a72a7672c8bc8042a4ede86729a7): failed to bind host port for 0.0.0.0:3002:172.17.0.4:80/tcp: address already in use
+failed to start containers: planka-kanban
+
+[2026-02-06 00:16:54] === Check abgeschlossen ===
+[2026-02-06 01:13:25] === MARVIN Gemini Check ===
+[2026-02-06 01:13:26] UP: Nexus (Nanobot), Agent Zero
+[2026-02-06 01:13:26] DOWN: Whisper STT, Planka, Claude Prozesse
+[2026-02-06 01:13:26] Resources: RAM 5.9/7.8GB, Load 2.68, 1.57, 1.59
+[2026-02-06 01:13:39] Gemini: Nein.
+
+Ursache: Hohe Systemlast und RAM-Auslastung. Ein Neustart würde wahrscheinlich fehlschlagen.
+
+Aktion:
+1.  Last analysieren und reduzieren.
+2.  Services sequenziell neustarten.
+3.  Stabilität üb...
+[2026-02-06 01:13:39] 🔧 Heile Whisper STT...
+[2026-02-06 01:13:39] ✅ Whisper STT gestartet
+[2026-02-06 01:13:39] 🔧 Heile Planka...
+[2026-02-06 01:13:47] ❌ Planka Start fehlgeschlagen: planka-db
+Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint planka-kanban (ffdd28191d78b08aa1d3e9a13727185ad3973025ad535b0b4584d2d7c4330318): failed to bind host port for 0.0.0.0:3002:172.17.0.4:80/tcp: address already in use
+failed to start containers: planka-kanban
+
+[2026-02-06 01:13:47] 🔧 Heile Claude Prozesse...
+[2026-02-06 01:13:47] ✅ Claude Prozesse gestartet
+[2026-02-06 01:13:47] === Check abgeschlossen ===
+[2026-02-06 01:24:47] === MARVIN Gemini Check ===
+[2026-02-06 01:24:47] UP: Nexus (Nanobot), Agent Zero
+[2026-02-06 01:24:47] DOWN: Whisper STT, Claude Prozesse
+[2026-02-06 01:24:47] Resources: RAM 6.2/7.8GB, Load 1.53, 1.15, 1.31
+[2026-02-06 01:24:55] Gemini: Nein.
+
+Systemressourcen (RAM, Load) sind kritisch hoch. Ein automatischer Neustart könnte das System überlasten.
+
+**Aktion:**
+1.  Ursache für hohe Auslastung prüfen.
+2.  Ressourcen freigeben.
+3.  Serv...
+[2026-02-06 01:24:55] 🔧 Heile Whisper STT...
+[2026-02-06 01:24:55] ✅ Whisper STT gestartet
+[2026-02-06 01:24:55] 🔧 Heile Claude Prozesse...
+[2026-02-06 01:24:55] ✅ Claude Prozesse gestartet
+[2026-02-06 01:24:55] === Check abgeschlossen ===
+[2026-02-06 01:34:07] === MARVIN Gemini Check ===
+[2026-02-06 01:34:08] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero
+[2026-02-06 01:34:08] DOWN: Whisper STT, Claude Prozesse
+[2026-02-06 01:34:08] Resources: RAM 6.9/7.8GB, Load 2.01, 1.58, 1.51
+[2026-02-06 01:34:23] Gemini: Nein. Ein sofortiger Neustart würde das System überlasten.
+
+**Diagnose:** Kritische RAM-Auslastung (88%) und hohe Systemlast. Wahrscheinliche Ursache für den Ausfall.
+
+**Heilungsplan:**
+1.  **Systemla...
+[2026-02-06 01:34:23] 🔧 Heile Whisper STT...
+[2026-02-06 01:34:23] ✅ Whisper STT gestartet
+[2026-02-06 01:34:23] 🔧 Heile Claude Prozesse...
+[2026-02-06 01:34:23] ✅ Claude Prozesse gestartet
+[2026-02-06 01:34:23] === Check abgeschlossen ===
+[2026-02-06 01:58:54] === MARVIN Gemini Check ===
+[2026-02-06 01:58:55] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero
+[2026-02-06 01:58:55] DOWN: Whisper STT, Claude Prozesse
+[2026-02-06 01:58:55] Resources: RAM 7.1/7.8GB, Load 1.12, 0.95, 1.06
+[2026-02-06 01:59:10] Gemini: Nein.
+
+**Analyse:** RAM-Auslastung ist mit 7.1/7.8 GB kritisch. Ein Neustart würde zu einem erneuten Absturz durch Speichermangel (OOM) führen.
+
+**Aktion:**
+1.  Speicher freigeben. Nicht-essentielle P...
+[2026-02-06 01:59:10] 🔧 Heile Whisper STT...
+[2026-02-06 01:59:10] ✅ Whisper STT gestartet
+[2026-02-06 01:59:10] 🔧 Heile Claude Prozesse...
+[2026-02-06 01:59:10] ✅ Claude Prozesse gestartet
+[2026-02-06 01:59:11] === Check abgeschlossen ===
+[2026-02-06 02:02:34] === MARVIN Gemini Check ===
+[2026-02-06 02:02:35] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Claude Prozesse
+[2026-02-06 02:02:35] DOWN: Whisper STT
+[2026-02-06 02:02:35] Resources: RAM 7.0/7.8GB, Load 2.21, 1.46, 1.25
+[2026-02-06 02:02:48] Gemini: Bestätigt. Service 'Whisper STT' ist offline.
+
+Neustart aktuell nicht empfohlen.
+Grund: Kritische RAM-Auslastung (7.0/7.8 GB). Hohe Systemlast.
+Risiko: Systeminstabilität.
+
+Aktion: Claude Prozesse auf...
+[2026-02-06 02:02:48] 🔧 Heile Whisper STT...
+[2026-02-06 02:02:48] ✅ Whisper STT gestartet
+[2026-02-06 02:02:48] === Check abgeschlossen ===
+[2026-02-06 02:32:44] === MARVIN Gemini Check ===
+[2026-02-06 02:32:45] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-06 02:32:45] Resources: RAM 7.4/7.8GB, Load 1.68, 1.30, 1.29
+[2026-02-06 02:32:45] === Check abgeschlossen ===
+[2026-02-07 14:09:39] === MARVIN Gemini Check ===
+[2026-02-07 14:09:40] UP: Nexus (OpenClaw), Claude Prozesse
+[2026-02-07 14:09:40] DOWN: Perr00bot (Nanobot), Agent Zero, Whisper STT
+[2026-02-07 14:09:40] Resources: RAM 4.0/7.8GB, Load 0.30, 0.16, 0.12
+[2026-02-07 14:09:51] Gemini: Ja. Systemressourcen sind stabil.
+
+**Aktion:** Starte Perr00bot, Agent Zero und Whisper STT neu. Überwache den Systemzustand nach dem Neustart....
+[2026-02-07 14:09:51] 🔧 Heile Perr00bot (Nanobot)...
+[2026-02-07 14:09:51] ❌ Perr00bot (Nanobot) Start fehlgeschlagen: 
+[2026-02-07 14:09:51] 🔧 Heile Agent Zero...
+[2026-02-07 14:09:54] ✅ Agent Zero gestartet
+[2026-02-07 14:09:54] 🔧 Heile Whisper STT...
+[2026-02-07 14:09:54] ✅ Whisper STT gestartet
+[2026-02-07 14:09:54] **[2026-02-07 14:09]** Auto-Heal: Agent Zero neugestartet
+[2026-02-07 14:09:54] === Check abgeschlossen ===
+[2026-02-07 14:10:02] === MARVIN Gemini Check ===
+[2026-02-07 14:10:02] UP: Nexus (OpenClaw), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:10:02] DOWN: Perr00bot (Nanobot)
+[2026-02-07 14:10:02] Resources: RAM 4.3/7.8GB, Load 0.90, 0.30, 0.16
+[2026-02-07 14:10:14] Gemini: Ja. Leite Neustart von Perr00bot (Nanobot) ein. Überwache den Status....
+[2026-02-07 14:10:14] 🔧 Heile Perr00bot (Nanobot)...
+[2026-02-07 14:10:14] ❌ Perr00bot (Nanobot) Start fehlgeschlagen: 
+[2026-02-07 14:10:15] === Check abgeschlossen ===
+[2026-02-07 14:10:02] === MARVIN Gemini Check ===
+[2026-02-07 14:10:02] UP: Nexus (OpenClaw), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:10:02] DOWN: Perr00bot (Nanobot)
+[2026-02-07 14:10:02] Resources: RAM 4.3/7.8GB, Load 0.90, 0.30, 0.16
+[2026-02-07 14:10:14] Gemini: Ja. Leite Neustart von Perr00bot (Nanobot) ein. Überwache den Status....
+[2026-02-07 14:10:14] 🔧 Heile Perr00bot (Nanobot)...
+[2026-02-07 14:10:14] ❌ Perr00bot (Nanobot) Start fehlgeschlagen: 
+[2026-02-07 14:10:15] === Check abgeschlossen ===
+[2026-02-07 14:12:09] === MARVIN Gemini Check ===
+[2026-02-07 14:12:09] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:12:09] Resources: RAM 5.0/7.8GB, Load 0.26, 0.32, 0.19
+[2026-02-07 14:12:09] === Check abgeschlossen ===
+[2026-02-07 14:20:01] === MARVIN Gemini Check ===
+[2026-02-07 14:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:20:01] Resources: RAM 4.9/7.8GB, Load 0.01, 0.21, 0.21
+[2026-02-07 14:20:01] === Check abgeschlossen ===
+[2026-02-07 14:20:01] === MARVIN Gemini Check ===
+[2026-02-07 14:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:20:01] Resources: RAM 4.9/7.8GB, Load 0.01, 0.21, 0.21
+[2026-02-07 14:20:01] === Check abgeschlossen ===
+[2026-02-07 14:30:02] === MARVIN Gemini Check ===
+[2026-02-07 14:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:30:02] Resources: RAM 5.3/7.8GB, Load 0.77, 0.48, 0.27
+[2026-02-07 14:30:02] === Check abgeschlossen ===
+[2026-02-07 14:30:02] === MARVIN Gemini Check ===
+[2026-02-07 14:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:30:02] Resources: RAM 5.3/7.8GB, Load 0.77, 0.48, 0.27
+[2026-02-07 14:30:02] === Check abgeschlossen ===
+[2026-02-07 14:40:01] === MARVIN Gemini Check ===
+[2026-02-07 14:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:40:01] Resources: RAM 5.0/7.8GB, Load 0.34, 0.42, 0.35
+[2026-02-07 14:40:01] === Check abgeschlossen ===
+[2026-02-07 14:40:01] === MARVIN Gemini Check ===
+[2026-02-07 14:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:40:01] Resources: RAM 5.0/7.8GB, Load 0.34, 0.42, 0.35
+[2026-02-07 14:40:01] === Check abgeschlossen ===
+[2026-02-07 14:50:01] === MARVIN Gemini Check ===
+[2026-02-07 14:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:50:01] Resources: RAM 5.0/7.8GB, Load 0.03, 0.14, 0.25
+[2026-02-07 14:50:01] === Check abgeschlossen ===
+[2026-02-07 14:50:01] === MARVIN Gemini Check ===
+[2026-02-07 14:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 14:50:01] Resources: RAM 5.0/7.8GB, Load 0.03, 0.14, 0.25
+[2026-02-07 14:50:01] === Check abgeschlossen ===
+[2026-02-07 15:00:02] === MARVIN Gemini Check ===
+[2026-02-07 15:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:00:02] Resources: RAM 5.0/7.8GB, Load 0.24, 0.26, 0.26
+[2026-02-07 15:00:02] === Check abgeschlossen ===
+[2026-02-07 15:00:02] === MARVIN Gemini Check ===
+[2026-02-07 15:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:00:02] Resources: RAM 5.0/7.8GB, Load 0.24, 0.26, 0.26
+[2026-02-07 15:00:02] === Check abgeschlossen ===
+[2026-02-07 15:10:02] === MARVIN Gemini Check ===
+[2026-02-07 15:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:10:02] Resources: RAM 5.0/7.8GB, Load 0.15, 0.41, 0.35
+[2026-02-07 15:10:02] === Check abgeschlossen ===
+[2026-02-07 15:10:02] === MARVIN Gemini Check ===
+[2026-02-07 15:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:10:02] Resources: RAM 5.0/7.8GB, Load 0.15, 0.41, 0.35
+[2026-02-07 15:10:02] === Check abgeschlossen ===
+[2026-02-07 15:20:01] === MARVIN Gemini Check ===
+[2026-02-07 15:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:20:01] Resources: RAM 5.0/7.8GB, Load 0.03, 0.20, 0.31
+[2026-02-07 15:20:01] === Check abgeschlossen ===
+[2026-02-07 15:20:01] === MARVIN Gemini Check ===
+[2026-02-07 15:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:20:01] Resources: RAM 5.0/7.8GB, Load 0.03, 0.20, 0.31
+[2026-02-07 15:20:01] === Check abgeschlossen ===
+[2026-02-07 15:30:03] === MARVIN Gemini Check ===
+[2026-02-07 15:30:03] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:30:03] Resources: RAM 5.5/7.8GB, Load 0.99, 0.49, 0.41
+[2026-02-07 15:30:03] === Check abgeschlossen ===
+[2026-02-07 15:30:03] === MARVIN Gemini Check ===
+[2026-02-07 15:30:03] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:30:03] Resources: RAM 5.5/7.8GB, Load 0.99, 0.49, 0.41
+[2026-02-07 15:30:03] === Check abgeschlossen ===
+[2026-02-07 15:40:02] === MARVIN Gemini Check ===
+[2026-02-07 15:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:40:02] Resources: RAM 5.6/7.8GB, Load 0.42, 0.22, 0.27
+[2026-02-07 15:40:02] === Check abgeschlossen ===
+[2026-02-07 15:40:02] === MARVIN Gemini Check ===
+[2026-02-07 15:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:40:02] Resources: RAM 5.6/7.8GB, Load 0.42, 0.22, 0.27
+[2026-02-07 15:40:02] === Check abgeschlossen ===
+[2026-02-07 15:50:01] === MARVIN Gemini Check ===
+[2026-02-07 15:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:50:01] Resources: RAM 5.6/7.8GB, Load 0.49, 0.39, 0.34
+[2026-02-07 15:50:01] === Check abgeschlossen ===
+[2026-02-07 15:50:01] === MARVIN Gemini Check ===
+[2026-02-07 15:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 15:50:01] Resources: RAM 5.6/7.8GB, Load 0.49, 0.39, 0.34
+[2026-02-07 15:50:01] === Check abgeschlossen ===
+[2026-02-07 16:00:02] === MARVIN Gemini Check ===
+[2026-02-07 16:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:00:02] Resources: RAM 5.5/7.8GB, Load 0.26, 0.31, 0.34
+[2026-02-07 16:00:02] === Check abgeschlossen ===
+[2026-02-07 16:00:02] === MARVIN Gemini Check ===
+[2026-02-07 16:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:00:02] Resources: RAM 5.5/7.8GB, Load 0.26, 0.31, 0.34
+[2026-02-07 16:00:02] === Check abgeschlossen ===
+[2026-02-07 16:10:02] === MARVIN Gemini Check ===
+[2026-02-07 16:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:10:02] Resources: RAM 5.6/7.8GB, Load 0.02, 0.07, 0.19
+[2026-02-07 16:10:02] === Check abgeschlossen ===
+[2026-02-07 16:10:02] === MARVIN Gemini Check ===
+[2026-02-07 16:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:10:02] Resources: RAM 5.6/7.8GB, Load 0.02, 0.07, 0.19
+[2026-02-07 16:10:02] === Check abgeschlossen ===
+[2026-02-07 16:20:02] === MARVIN Gemini Check ===
+[2026-02-07 16:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:20:02] Resources: RAM 5.5/7.8GB, Load 0.06, 0.15, 0.18
+[2026-02-07 16:20:02] === Check abgeschlossen ===
+[2026-02-07 16:20:02] === MARVIN Gemini Check ===
+[2026-02-07 16:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:20:02] Resources: RAM 5.5/7.8GB, Load 0.06, 0.15, 0.18
+[2026-02-07 16:20:02] === Check abgeschlossen ===
+[2026-02-07 16:30:01] === MARVIN Gemini Check ===
+[2026-02-07 16:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:30:02] Resources: RAM 5.7/7.8GB, Load 0.04, 0.14, 0.16
+[2026-02-07 16:30:02] === Check abgeschlossen ===
+[2026-02-07 16:30:01] === MARVIN Gemini Check ===
+[2026-02-07 16:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:30:02] Resources: RAM 5.7/7.8GB, Load 0.04, 0.14, 0.16
+[2026-02-07 16:30:02] === Check abgeschlossen ===
+[2026-02-07 16:40:02] === MARVIN Gemini Check ===
+[2026-02-07 16:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:40:02] Resources: RAM 5.5/7.8GB, Load 0.03, 0.07, 0.12
+[2026-02-07 16:40:02] === Check abgeschlossen ===
+[2026-02-07 16:40:02] === MARVIN Gemini Check ===
+[2026-02-07 16:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:40:02] Resources: RAM 5.5/7.8GB, Load 0.03, 0.07, 0.12
+[2026-02-07 16:40:02] === Check abgeschlossen ===
+[2026-02-07 16:50:01] === MARVIN Gemini Check ===
+[2026-02-07 16:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:50:01] Resources: RAM 5.7/7.8GB, Load 0.02, 0.24, 0.23
+[2026-02-07 16:50:01] === Check abgeschlossen ===
+[2026-02-07 16:50:01] === MARVIN Gemini Check ===
+[2026-02-07 16:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 16:50:01] Resources: RAM 5.7/7.8GB, Load 0.02, 0.24, 0.23
+[2026-02-07 16:50:01] === Check abgeschlossen ===
+[2026-02-07 17:00:01] === MARVIN Gemini Check ===
+[2026-02-07 17:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:00:02] Resources: RAM 5.7/7.8GB, Load 0.10, 0.07, 0.13
+[2026-02-07 17:00:02] === Check abgeschlossen ===
+[2026-02-07 17:00:01] === MARVIN Gemini Check ===
+[2026-02-07 17:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:00:02] Resources: RAM 5.7/7.8GB, Load 0.10, 0.07, 0.13
+[2026-02-07 17:00:02] === Check abgeschlossen ===
+[2026-02-07 17:10:01] === MARVIN Gemini Check ===
+[2026-02-07 17:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:10:01] Resources: RAM 5.6/7.8GB, Load 0.49, 0.12, 0.10
+[2026-02-07 17:10:01] === Check abgeschlossen ===
+[2026-02-07 17:10:01] === MARVIN Gemini Check ===
+[2026-02-07 17:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:10:01] Resources: RAM 5.6/7.8GB, Load 0.49, 0.12, 0.10
+[2026-02-07 17:10:01] === Check abgeschlossen ===
+[2026-02-07 17:20:01] === MARVIN Gemini Check ===
+[2026-02-07 17:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:20:01] Resources: RAM 5.6/7.8GB, Load 0.02, 0.04, 0.06
+[2026-02-07 17:20:01] === Check abgeschlossen ===
+[2026-02-07 17:20:01] === MARVIN Gemini Check ===
+[2026-02-07 17:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:20:01] Resources: RAM 5.6/7.8GB, Load 0.02, 0.04, 0.06
+[2026-02-07 17:20:01] === Check abgeschlossen ===
+[2026-02-07 17:30:01] === MARVIN Gemini Check ===
+[2026-02-07 17:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:30:02] Resources: RAM 5.7/7.8GB, Load 0.09, 0.10, 0.08
+[2026-02-07 17:30:02] === Check abgeschlossen ===
+[2026-02-07 17:30:01] === MARVIN Gemini Check ===
+[2026-02-07 17:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:30:02] Resources: RAM 5.7/7.8GB, Load 0.09, 0.10, 0.08
+[2026-02-07 17:30:02] === Check abgeschlossen ===
+[2026-02-07 17:40:01] === MARVIN Gemini Check ===
+[2026-02-07 17:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:40:01] Resources: RAM 5.6/7.8GB, Load 0.03, 0.05, 0.07
+[2026-02-07 17:40:01] === Check abgeschlossen ===
+[2026-02-07 17:40:01] === MARVIN Gemini Check ===
+[2026-02-07 17:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:40:01] Resources: RAM 5.6/7.8GB, Load 0.03, 0.05, 0.07
+[2026-02-07 17:40:01] === Check abgeschlossen ===
+[2026-02-07 17:50:01] === MARVIN Gemini Check ===
+[2026-02-07 17:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:50:01] Resources: RAM 6.0/7.8GB, Load 0.47, 0.36, 0.18
+[2026-02-07 17:50:01] === Check abgeschlossen ===
+[2026-02-07 17:50:01] === MARVIN Gemini Check ===
+[2026-02-07 17:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 17:50:01] Resources: RAM 6.0/7.8GB, Load 0.47, 0.36, 0.18
+[2026-02-07 17:50:01] === Check abgeschlossen ===
+[2026-02-07 18:00:02] === MARVIN Gemini Check ===
+[2026-02-07 18:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:00:02] Resources: RAM 5.9/7.8GB, Load 0.40, 0.37, 0.24
+[2026-02-07 18:00:02] === Check abgeschlossen ===
+[2026-02-07 18:00:02] === MARVIN Gemini Check ===
+[2026-02-07 18:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:00:02] Resources: RAM 5.9/7.8GB, Load 0.40, 0.37, 0.24
+[2026-02-07 18:00:02] === Check abgeschlossen ===
+[2026-02-07 18:10:01] === MARVIN Gemini Check ===
+[2026-02-07 18:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:10:01] Resources: RAM 5.9/7.8GB, Load 0.12, 0.14, 0.16
+[2026-02-07 18:10:01] === Check abgeschlossen ===
+[2026-02-07 18:10:01] === MARVIN Gemini Check ===
+[2026-02-07 18:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:10:01] Resources: RAM 5.9/7.8GB, Load 0.12, 0.14, 0.16
+[2026-02-07 18:10:01] === Check abgeschlossen ===
+[2026-02-07 18:20:01] === MARVIN Gemini Check ===
+[2026-02-07 18:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:20:01] Resources: RAM 6.1/7.8GB, Load 0.15, 0.13, 0.14
+[2026-02-07 18:20:01] === Check abgeschlossen ===
+[2026-02-07 18:20:01] === MARVIN Gemini Check ===
+[2026-02-07 18:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:20:01] Resources: RAM 6.1/7.8GB, Load 0.15, 0.13, 0.14
+[2026-02-07 18:20:01] === Check abgeschlossen ===
+[2026-02-07 18:30:01] === MARVIN Gemini Check ===
+[2026-02-07 18:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:30:01] Resources: RAM 5.2/7.8GB, Load 0.01, 0.08, 0.11
+[2026-02-07 18:30:01] === Check abgeschlossen ===
+[2026-02-07 18:30:01] === MARVIN Gemini Check ===
+[2026-02-07 18:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:30:01] Resources: RAM 5.2/7.8GB, Load 0.01, 0.08, 0.11
+[2026-02-07 18:30:01] === Check abgeschlossen ===
+[2026-02-07 18:40:02] === MARVIN Gemini Check ===
+[2026-02-07 18:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:40:02] Resources: RAM 5.2/7.8GB, Load 0.00, 0.01, 0.05
+[2026-02-07 18:40:02] === Check abgeschlossen ===
+[2026-02-07 18:40:02] === MARVIN Gemini Check ===
+[2026-02-07 18:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:40:02] Resources: RAM 5.2/7.8GB, Load 0.00, 0.01, 0.05
+[2026-02-07 18:40:02] === Check abgeschlossen ===
+[2026-02-07 18:50:01] === MARVIN Gemini Check ===
+[2026-02-07 18:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:50:01] Resources: RAM 5.2/7.8GB, Load 0.00, 0.00, 0.00
+[2026-02-07 18:50:01] === Check abgeschlossen ===
+[2026-02-07 18:50:01] === MARVIN Gemini Check ===
+[2026-02-07 18:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 18:50:01] Resources: RAM 5.2/7.8GB, Load 0.00, 0.00, 0.00
+[2026-02-07 18:50:01] === Check abgeschlossen ===
+[2026-02-07 19:00:01] === MARVIN Gemini Check ===
+[2026-02-07 19:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:00:01] Resources: RAM 5.2/7.8GB, Load 0.14, 0.05, 0.01
+[2026-02-07 19:00:01] === Check abgeschlossen ===
+[2026-02-07 19:00:01] === MARVIN Gemini Check ===
+[2026-02-07 19:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:00:01] Resources: RAM 5.2/7.8GB, Load 0.14, 0.05, 0.01
+[2026-02-07 19:00:01] === Check abgeschlossen ===
+[2026-02-07 19:10:01] === MARVIN Gemini Check ===
+[2026-02-07 19:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:10:01] Resources: RAM 5.2/7.8GB, Load 0.33, 0.32, 0.15
+[2026-02-07 19:10:01] === Check abgeschlossen ===
+[2026-02-07 19:10:01] === MARVIN Gemini Check ===
+[2026-02-07 19:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:10:01] Resources: RAM 5.2/7.8GB, Load 0.33, 0.32, 0.15
+[2026-02-07 19:10:01] === Check abgeschlossen ===
+[2026-02-07 19:20:02] === MARVIN Gemini Check ===
+[2026-02-07 19:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:20:02] Resources: RAM 5.2/7.8GB, Load 0.05, 0.07, 0.08
+[2026-02-07 19:20:02] === Check abgeschlossen ===
+[2026-02-07 19:20:02] === MARVIN Gemini Check ===
+[2026-02-07 19:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:20:02] Resources: RAM 5.2/7.8GB, Load 0.05, 0.07, 0.08
+[2026-02-07 19:20:02] === Check abgeschlossen ===
+[2026-02-07 19:30:01] === MARVIN Gemini Check ===
+[2026-02-07 19:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:30:01] Resources: RAM 5.3/7.8GB, Load 0.02, 0.06, 0.08
+[2026-02-07 19:30:01] === Check abgeschlossen ===
+[2026-02-07 19:30:01] === MARVIN Gemini Check ===
+[2026-02-07 19:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:30:01] Resources: RAM 5.3/7.8GB, Load 0.02, 0.06, 0.08
+[2026-02-07 19:30:01] === Check abgeschlossen ===
+[2026-02-07 19:40:01] === MARVIN Gemini Check ===
+[2026-02-07 19:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:40:01] Resources: RAM 5.3/7.8GB, Load 0.17, 0.18, 0.12
+[2026-02-07 19:40:01] === Check abgeschlossen ===
+[2026-02-07 19:40:01] === MARVIN Gemini Check ===
+[2026-02-07 19:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:40:01] Resources: RAM 5.3/7.8GB, Load 0.17, 0.18, 0.12
+[2026-02-07 19:40:01] === Check abgeschlossen ===
+[2026-02-07 19:50:02] === MARVIN Gemini Check ===
+[2026-02-07 19:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:50:02] Resources: RAM 5.3/7.8GB, Load 0.05, 0.12, 0.09
+[2026-02-07 19:50:02] === Check abgeschlossen ===
+[2026-02-07 19:50:02] === MARVIN Gemini Check ===
+[2026-02-07 19:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 19:50:02] Resources: RAM 5.3/7.8GB, Load 0.05, 0.12, 0.09
+[2026-02-07 19:50:02] === Check abgeschlossen ===
+[2026-02-07 20:00:01] === MARVIN Gemini Check ===
+[2026-02-07 20:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:00:01] Resources: RAM 5.3/7.8GB, Load 0.94, 0.33, 0.16
+[2026-02-07 20:00:01] === Check abgeschlossen ===
+[2026-02-07 20:00:01] === MARVIN Gemini Check ===
+[2026-02-07 20:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:00:01] Resources: RAM 5.3/7.8GB, Load 0.94, 0.33, 0.16
+[2026-02-07 20:00:01] === Check abgeschlossen ===
+[2026-02-07 20:10:01] === MARVIN Gemini Check ===
+[2026-02-07 20:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:10:01] Resources: RAM 5.3/7.8GB, Load 0.00, 0.05, 0.08
+[2026-02-07 20:10:01] === Check abgeschlossen ===
+[2026-02-07 20:10:01] === MARVIN Gemini Check ===
+[2026-02-07 20:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:10:01] Resources: RAM 5.3/7.8GB, Load 0.00, 0.05, 0.08
+[2026-02-07 20:10:01] === Check abgeschlossen ===
+[2026-02-07 20:20:01] === MARVIN Gemini Check ===
+[2026-02-07 20:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:20:02] Resources: RAM 5.3/7.8GB, Load 0.12, 0.13, 0.09
+[2026-02-07 20:20:02] === Check abgeschlossen ===
+[2026-02-07 20:20:01] === MARVIN Gemini Check ===
+[2026-02-07 20:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:20:02] Resources: RAM 5.3/7.8GB, Load 0.12, 0.13, 0.09
+[2026-02-07 20:20:02] === Check abgeschlossen ===
+[2026-02-07 20:30:01] === MARVIN Gemini Check ===
+[2026-02-07 20:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:30:02] Resources: RAM 5.3/7.8GB, Load 0.74, 0.28, 0.16
+[2026-02-07 20:30:02] === Check abgeschlossen ===
+[2026-02-07 20:30:01] === MARVIN Gemini Check ===
+[2026-02-07 20:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:30:02] Resources: RAM 5.3/7.8GB, Load 0.74, 0.28, 0.16
+[2026-02-07 20:30:02] === Check abgeschlossen ===
+[2026-02-07 20:40:01] === MARVIN Gemini Check ===
+[2026-02-07 20:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:40:01] Resources: RAM 5.3/7.8GB, Load 0.11, 0.09, 0.10
+[2026-02-07 20:40:01] === Check abgeschlossen ===
+[2026-02-07 20:40:01] === MARVIN Gemini Check ===
+[2026-02-07 20:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:40:01] Resources: RAM 5.3/7.8GB, Load 0.11, 0.09, 0.10
+[2026-02-07 20:40:01] === Check abgeschlossen ===
+[2026-02-07 20:50:02] === MARVIN Gemini Check ===
+[2026-02-07 20:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:50:02] Resources: RAM 5.2/7.8GB, Load 0.33, 0.11, 0.09
+[2026-02-07 20:50:02] === Check abgeschlossen ===
+[2026-02-07 20:50:02] === MARVIN Gemini Check ===
+[2026-02-07 20:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 20:50:02] Resources: RAM 5.2/7.8GB, Load 0.33, 0.11, 0.09
+[2026-02-07 20:50:02] === Check abgeschlossen ===
+[2026-02-07 21:00:01] === MARVIN Gemini Check ===
+[2026-02-07 21:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:00:01] Resources: RAM 5.3/7.8GB, Load 0.04, 0.10, 0.09
+[2026-02-07 21:00:01] === Check abgeschlossen ===
+[2026-02-07 21:00:01] === MARVIN Gemini Check ===
+[2026-02-07 21:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:00:01] Resources: RAM 5.3/7.8GB, Load 0.04, 0.10, 0.09
+[2026-02-07 21:00:01] === Check abgeschlossen ===
+[2026-02-07 21:10:01] === MARVIN Gemini Check ===
+[2026-02-07 21:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:10:01] Resources: RAM 5.3/7.8GB, Load 0.02, 0.05, 0.07
+[2026-02-07 21:10:01] === Check abgeschlossen ===
+[2026-02-07 21:10:01] === MARVIN Gemini Check ===
+[2026-02-07 21:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:10:01] Resources: RAM 5.3/7.8GB, Load 0.02, 0.05, 0.07
+[2026-02-07 21:10:01] === Check abgeschlossen ===
+[2026-02-07 21:20:01] === MARVIN Gemini Check ===
+[2026-02-07 21:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:20:02] Resources: RAM 5.3/7.8GB, Load 0.08, 0.03, 0.03
+[2026-02-07 21:20:02] === Check abgeschlossen ===
+[2026-02-07 21:20:01] === MARVIN Gemini Check ===
+[2026-02-07 21:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:20:02] Resources: RAM 5.3/7.8GB, Load 0.08, 0.03, 0.03
+[2026-02-07 21:20:02] === Check abgeschlossen ===
+[2026-02-07 21:30:01] === MARVIN Gemini Check ===
+[2026-02-07 21:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:30:01] Resources: RAM 5.3/7.8GB, Load 0.05, 0.06, 0.04
+[2026-02-07 21:30:01] === Check abgeschlossen ===
+[2026-02-07 21:30:01] === MARVIN Gemini Check ===
+[2026-02-07 21:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:30:01] Resources: RAM 5.3/7.8GB, Load 0.05, 0.06, 0.04
+[2026-02-07 21:30:01] === Check abgeschlossen ===
+[2026-02-07 21:40:02] === MARVIN Gemini Check ===
+[2026-02-07 21:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:40:02] Resources: RAM 5.3/7.8GB, Load 0.03, 0.03, 0.00
+[2026-02-07 21:40:02] === Check abgeschlossen ===
+[2026-02-07 21:40:02] === MARVIN Gemini Check ===
+[2026-02-07 21:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:40:02] Resources: RAM 5.3/7.8GB, Load 0.03, 0.03, 0.00
+[2026-02-07 21:40:02] === Check abgeschlossen ===
+[2026-02-07 21:50:01] === MARVIN Gemini Check ===
+[2026-02-07 21:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:50:01] Resources: RAM 5.3/7.8GB, Load 0.06, 0.03, 0.00
+[2026-02-07 21:50:01] === Check abgeschlossen ===
+[2026-02-07 21:50:01] === MARVIN Gemini Check ===
+[2026-02-07 21:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 21:50:01] Resources: RAM 5.3/7.8GB, Load 0.06, 0.03, 0.00
+[2026-02-07 21:50:01] === Check abgeschlossen ===
+[2026-02-07 22:00:01] === MARVIN Gemini Check ===
+[2026-02-07 22:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:00:01] Resources: RAM 5.3/7.8GB, Load 0.00, 0.01, 0.00
+[2026-02-07 22:00:01] === Check abgeschlossen ===
+[2026-02-07 22:00:01] === MARVIN Gemini Check ===
+[2026-02-07 22:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:00:01] Resources: RAM 5.3/7.8GB, Load 0.00, 0.01, 0.00
+[2026-02-07 22:00:01] === Check abgeschlossen ===
+[2026-02-07 22:10:01] === MARVIN Gemini Check ===
+[2026-02-07 22:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:10:02] Resources: RAM 5.3/7.8GB, Load 0.07, 0.07, 0.02
+[2026-02-07 22:10:02] === Check abgeschlossen ===
+[2026-02-07 22:10:01] === MARVIN Gemini Check ===
+[2026-02-07 22:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:10:02] Resources: RAM 5.3/7.8GB, Load 0.07, 0.07, 0.02
+[2026-02-07 22:10:02] === Check abgeschlossen ===
+[2026-02-07 22:20:01] === MARVIN Gemini Check ===
+[2026-02-07 22:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:20:01] Resources: RAM 5.3/7.8GB, Load 0.04, 0.03, 0.00
+[2026-02-07 22:20:01] === Check abgeschlossen ===
+[2026-02-07 22:20:01] === MARVIN Gemini Check ===
+[2026-02-07 22:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:20:01] Resources: RAM 5.3/7.8GB, Load 0.04, 0.03, 0.00
+[2026-02-07 22:20:01] === Check abgeschlossen ===
+[2026-02-07 22:30:01] === MARVIN Gemini Check ===
+[2026-02-07 22:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:30:01] Resources: RAM 5.3/7.8GB, Load 0.01, 0.06, 0.01
+[2026-02-07 22:30:01] === Check abgeschlossen ===
+[2026-02-07 22:30:01] === MARVIN Gemini Check ===
+[2026-02-07 22:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:30:01] Resources: RAM 5.3/7.8GB, Load 0.01, 0.06, 0.01
+[2026-02-07 22:30:01] === Check abgeschlossen ===
+[2026-02-07 22:40:02] === MARVIN Gemini Check ===
+[2026-02-07 22:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:40:02] Resources: RAM 5.0/7.8GB, Load 0.03, 0.03, 0.00
+[2026-02-07 22:40:02] === Check abgeschlossen ===
+[2026-02-07 22:40:02] === MARVIN Gemini Check ===
+[2026-02-07 22:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:40:02] Resources: RAM 5.0/7.8GB, Load 0.03, 0.03, 0.00
+[2026-02-07 22:40:02] === Check abgeschlossen ===
+[2026-02-07 22:50:01] === MARVIN Gemini Check ===
+[2026-02-07 22:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:50:01] Resources: RAM 4.9/7.8GB, Load 0.00, 0.00, 0.00
+[2026-02-07 22:50:01] === Check abgeschlossen ===
+[2026-02-07 22:50:01] === MARVIN Gemini Check ===
+[2026-02-07 22:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 22:50:01] Resources: RAM 4.9/7.8GB, Load 0.00, 0.00, 0.00
+[2026-02-07 22:50:01] === Check abgeschlossen ===
+[2026-02-07 23:00:01] === MARVIN Gemini Check ===
+[2026-02-07 23:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:00:01] Resources: RAM 5.0/7.8GB, Load 0.01, 0.04, 0.01
+[2026-02-07 23:00:01] === Check abgeschlossen ===
+[2026-02-07 23:00:01] === MARVIN Gemini Check ===
+[2026-02-07 23:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:00:01] Resources: RAM 5.0/7.8GB, Load 0.01, 0.04, 0.01
+[2026-02-07 23:00:01] === Check abgeschlossen ===
+[2026-02-07 23:10:01] === MARVIN Gemini Check ===
+[2026-02-07 23:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:10:01] Resources: RAM 4.9/7.8GB, Load 0.00, 0.00, 0.00
+[2026-02-07 23:10:01] === Check abgeschlossen ===
+[2026-02-07 23:10:01] === MARVIN Gemini Check ===
+[2026-02-07 23:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:10:01] Resources: RAM 4.9/7.8GB, Load 0.00, 0.00, 0.00
+[2026-02-07 23:10:01] === Check abgeschlossen ===
+[2026-02-07 23:20:01] === MARVIN Gemini Check ===
+[2026-02-07 23:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:20:01] Resources: RAM 4.9/7.8GB, Load 0.24, 0.07, 0.02
+[2026-02-07 23:20:01] === Check abgeschlossen ===
+[2026-02-07 23:20:01] === MARVIN Gemini Check ===
+[2026-02-07 23:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:20:01] Resources: RAM 4.9/7.8GB, Load 0.24, 0.07, 0.02
+[2026-02-07 23:20:01] === Check abgeschlossen ===
+[2026-02-07 23:30:02] === MARVIN Gemini Check ===
+[2026-02-07 23:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:30:02] Resources: RAM 5.0/7.8GB, Load 0.00, 0.01, 0.00
+[2026-02-07 23:30:02] === Check abgeschlossen ===
+[2026-02-07 23:30:02] === MARVIN Gemini Check ===
+[2026-02-07 23:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:30:02] Resources: RAM 5.0/7.8GB, Load 0.00, 0.01, 0.00
+[2026-02-07 23:30:02] === Check abgeschlossen ===
+[2026-02-07 23:40:01] === MARVIN Gemini Check ===
+[2026-02-07 23:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:40:01] Resources: RAM 5.3/7.8GB, Load 0.14, 0.10, 0.03
+[2026-02-07 23:40:01] === Check abgeschlossen ===
+[2026-02-07 23:40:01] === MARVIN Gemini Check ===
+[2026-02-07 23:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:40:01] Resources: RAM 5.3/7.8GB, Load 0.14, 0.10, 0.03
+[2026-02-07 23:40:01] === Check abgeschlossen ===
+[2026-02-07 23:50:01] === MARVIN Gemini Check ===
+[2026-02-07 23:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:50:01] Resources: RAM 5.0/7.8GB, Load 0.02, 0.12, 0.07
+[2026-02-07 23:50:01] === Check abgeschlossen ===
+[2026-02-07 23:50:01] === MARVIN Gemini Check ===
+[2026-02-07 23:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-07 23:50:01] Resources: RAM 5.0/7.8GB, Load 0.02, 0.12, 0.07
+[2026-02-07 23:50:01] === Check abgeschlossen ===
+[2026-02-08 00:00:04] === MARVIN Gemini Check ===
+[2026-02-08 00:00:04] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:00:04] Resources: RAM 5.1/7.8GB, Load 0.32, 0.08, 0.05
+[2026-02-08 00:00:04] === Check abgeschlossen ===
+[2026-02-08 00:00:04] === MARVIN Gemini Check ===
+[2026-02-08 00:00:04] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:00:04] Resources: RAM 5.1/7.8GB, Load 0.32, 0.08, 0.05
+[2026-02-08 00:00:04] === Check abgeschlossen ===
+[2026-02-08 00:10:01] === MARVIN Gemini Check ===
+[2026-02-08 00:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:10:01] Resources: RAM 5.1/7.8GB, Load 0.10, 0.08, 0.07
+[2026-02-08 00:10:01] === Check abgeschlossen ===
+[2026-02-08 00:10:01] === MARVIN Gemini Check ===
+[2026-02-08 00:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:10:01] Resources: RAM 5.1/7.8GB, Load 0.10, 0.08, 0.07
+[2026-02-08 00:10:01] === Check abgeschlossen ===
+[2026-02-08 00:20:01] === MARVIN Gemini Check ===
+[2026-02-08 00:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:20:01] Resources: RAM 5.2/7.8GB, Load 0.02, 0.06, 0.06
+[2026-02-08 00:20:01] === Check abgeschlossen ===
+[2026-02-08 00:20:01] === MARVIN Gemini Check ===
+[2026-02-08 00:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:20:01] Resources: RAM 5.2/7.8GB, Load 0.02, 0.06, 0.06
+[2026-02-08 00:20:01] === Check abgeschlossen ===
+[2026-02-08 00:30:01] === MARVIN Gemini Check ===
+[2026-02-08 00:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:30:02] Resources: RAM 5.1/7.8GB, Load 0.17, 0.09, 0.05
+[2026-02-08 00:30:02] === Check abgeschlossen ===
+[2026-02-08 00:30:01] === MARVIN Gemini Check ===
+[2026-02-08 00:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:30:02] Resources: RAM 5.1/7.8GB, Load 0.17, 0.09, 0.05
+[2026-02-08 00:30:02] === Check abgeschlossen ===
+[2026-02-08 00:40:01] === MARVIN Gemini Check ===
+[2026-02-08 00:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:40:02] Resources: RAM 5.2/7.8GB, Load 0.04, 0.08, 0.08
+[2026-02-08 00:40:02] === Check abgeschlossen ===
+[2026-02-08 00:40:01] === MARVIN Gemini Check ===
+[2026-02-08 00:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:40:02] Resources: RAM 5.2/7.8GB, Load 0.04, 0.08, 0.08
+[2026-02-08 00:40:02] === Check abgeschlossen ===
+[2026-02-08 00:50:01] === MARVIN Gemini Check ===
+[2026-02-08 00:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:50:01] Resources: RAM 5.1/7.8GB, Load 0.08, 0.10, 0.07
+[2026-02-08 00:50:01] === Check abgeschlossen ===
+[2026-02-08 00:50:01] === MARVIN Gemini Check ===
+[2026-02-08 00:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 00:50:01] Resources: RAM 5.1/7.8GB, Load 0.08, 0.10, 0.07
+[2026-02-08 00:50:01] === Check abgeschlossen ===
+[2026-02-08 01:00:02] === MARVIN Gemini Check ===
+[2026-02-08 01:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:00:02] Resources: RAM 5.1/7.8GB, Load 0.23, 0.13, 0.08
+[2026-02-08 01:00:02] === Check abgeschlossen ===
+[2026-02-08 01:00:02] === MARVIN Gemini Check ===
+[2026-02-08 01:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:00:02] Resources: RAM 5.1/7.8GB, Load 0.23, 0.13, 0.08
+[2026-02-08 01:00:02] === Check abgeschlossen ===
+[2026-02-08 01:10:01] === MARVIN Gemini Check ===
+[2026-02-08 01:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:10:02] Resources: RAM 5.1/7.8GB, Load 0.05, 0.06, 0.07
+[2026-02-08 01:10:02] === Check abgeschlossen ===
+[2026-02-08 01:10:01] === MARVIN Gemini Check ===
+[2026-02-08 01:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:10:02] Resources: RAM 5.1/7.8GB, Load 0.05, 0.06, 0.07
+[2026-02-08 01:10:02] === Check abgeschlossen ===
+[2026-02-08 01:20:01] === MARVIN Gemini Check ===
+[2026-02-08 01:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:20:01] Resources: RAM 5.2/7.8GB, Load 0.00, 0.04, 0.06
+[2026-02-08 01:20:01] === Check abgeschlossen ===
+[2026-02-08 01:20:01] === MARVIN Gemini Check ===
+[2026-02-08 01:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:20:01] Resources: RAM 5.2/7.8GB, Load 0.00, 0.04, 0.06
+[2026-02-08 01:20:01] === Check abgeschlossen ===
+[2026-02-08 01:30:02] === MARVIN Gemini Check ===
+[2026-02-08 01:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:30:02] Resources: RAM 5.2/7.8GB, Load 0.20, 0.25, 0.14
+[2026-02-08 01:30:02] === Check abgeschlossen ===
+[2026-02-08 01:30:02] === MARVIN Gemini Check ===
+[2026-02-08 01:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:30:02] Resources: RAM 5.2/7.8GB, Load 0.20, 0.25, 0.14
+[2026-02-08 01:30:02] === Check abgeschlossen ===
+[2026-02-08 01:40:01] === MARVIN Gemini Check ===
+[2026-02-08 01:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:40:01] Resources: RAM 5.2/7.8GB, Load 0.05, 0.10, 0.10
+[2026-02-08 01:40:01] === Check abgeschlossen ===
+[2026-02-08 01:40:01] === MARVIN Gemini Check ===
+[2026-02-08 01:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:40:01] Resources: RAM 5.2/7.8GB, Load 0.05, 0.10, 0.10
+[2026-02-08 01:40:01] === Check abgeschlossen ===
+[2026-02-08 01:50:01] === MARVIN Gemini Check ===
+[2026-02-08 01:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:50:02] Resources: RAM 5.2/7.8GB, Load 0.00, 0.05, 0.08
+[2026-02-08 01:50:02] === Check abgeschlossen ===
+[2026-02-08 01:50:01] === MARVIN Gemini Check ===
+[2026-02-08 01:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 01:50:02] Resources: RAM 5.2/7.8GB, Load 0.00, 0.05, 0.08
+[2026-02-08 01:50:02] === Check abgeschlossen ===
+[2026-02-08 02:00:01] === MARVIN Gemini Check ===
+[2026-02-08 02:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:00:01] Resources: RAM 5.1/7.8GB, Load 0.22, 0.18, 0.11
+[2026-02-08 02:00:01] === Check abgeschlossen ===
+[2026-02-08 02:00:01] === MARVIN Gemini Check ===
+[2026-02-08 02:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:00:01] Resources: RAM 5.1/7.8GB, Load 0.22, 0.18, 0.11
+[2026-02-08 02:00:01] === Check abgeschlossen ===
+[2026-02-08 02:10:01] === MARVIN Gemini Check ===
+[2026-02-08 02:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:10:01] Resources: RAM 5.2/7.8GB, Load 0.12, 0.20, 0.17
+[2026-02-08 02:10:01] === Check abgeschlossen ===
+[2026-02-08 02:10:01] === MARVIN Gemini Check ===
+[2026-02-08 02:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:10:01] Resources: RAM 5.2/7.8GB, Load 0.12, 0.20, 0.17
+[2026-02-08 02:10:01] === Check abgeschlossen ===
+[2026-02-08 02:20:01] === MARVIN Gemini Check ===
+[2026-02-08 02:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:20:01] Resources: RAM 5.3/7.8GB, Load 0.29, 0.34, 0.26
+[2026-02-08 02:20:01] === Check abgeschlossen ===
+[2026-02-08 02:20:01] === MARVIN Gemini Check ===
+[2026-02-08 02:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:20:01] Resources: RAM 5.3/7.8GB, Load 0.29, 0.34, 0.26
+[2026-02-08 02:20:01] === Check abgeschlossen ===
+[2026-02-08 02:30:01] === MARVIN Gemini Check ===
+[2026-02-08 02:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:30:01] Resources: RAM 5.3/7.8GB, Load 0.02, 0.06, 0.13
+[2026-02-08 02:30:01] === Check abgeschlossen ===
+[2026-02-08 02:30:01] === MARVIN Gemini Check ===
+[2026-02-08 02:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:30:01] Resources: RAM 5.3/7.8GB, Load 0.02, 0.06, 0.13
+[2026-02-08 02:30:01] === Check abgeschlossen ===
+[2026-02-08 02:40:01] === MARVIN Gemini Check ===
+[2026-02-08 02:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:40:01] Resources: RAM 5.3/7.8GB, Load 0.67, 0.22, 0.14
+[2026-02-08 02:40:01] === Check abgeschlossen ===
+[2026-02-08 02:40:01] === MARVIN Gemini Check ===
+[2026-02-08 02:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:40:01] Resources: RAM 5.3/7.8GB, Load 0.67, 0.22, 0.14
+[2026-02-08 02:40:01] === Check abgeschlossen ===
+[2026-02-08 02:50:02] === MARVIN Gemini Check ===
+[2026-02-08 02:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:50:02] Resources: RAM 5.2/7.8GB, Load 0.02, 0.08, 0.08
+[2026-02-08 02:50:02] === Check abgeschlossen ===
+[2026-02-08 02:50:02] === MARVIN Gemini Check ===
+[2026-02-08 02:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 02:50:02] Resources: RAM 5.2/7.8GB, Load 0.02, 0.08, 0.08
+[2026-02-08 02:50:02] === Check abgeschlossen ===
+[2026-02-08 03:00:01] === MARVIN Gemini Check ===
+[2026-02-08 03:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:00:01] Resources: RAM 5.2/7.8GB, Load 0.76, 0.22, 0.12
+[2026-02-08 03:00:01] === Check abgeschlossen ===
+[2026-02-08 03:00:01] === MARVIN Gemini Check ===
+[2026-02-08 03:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:00:01] Resources: RAM 5.2/7.8GB, Load 0.76, 0.22, 0.12
+[2026-02-08 03:00:01] === Check abgeschlossen ===
+[2026-02-08 03:10:02] === MARVIN Gemini Check ===
+[2026-02-08 03:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:10:02] Resources: RAM 5.4/7.8GB, Load 1.05, 0.30, 0.16
+[2026-02-08 03:10:02] === Check abgeschlossen ===
+[2026-02-08 03:10:02] === MARVIN Gemini Check ===
+[2026-02-08 03:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:10:02] Resources: RAM 5.4/7.8GB, Load 1.05, 0.30, 0.16
+[2026-02-08 03:10:02] === Check abgeschlossen ===
+[2026-02-08 03:20:01] === MARVIN Gemini Check ===
+[2026-02-08 03:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:20:01] Resources: RAM 5.2/7.8GB, Load 0.37, 0.29, 0.20
+[2026-02-08 03:20:01] === Check abgeschlossen ===
+[2026-02-08 03:20:01] === MARVIN Gemini Check ===
+[2026-02-08 03:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:20:01] Resources: RAM 5.2/7.8GB, Load 0.37, 0.29, 0.20
+[2026-02-08 03:20:01] === Check abgeschlossen ===
+[2026-02-08 03:30:01] === MARVIN Gemini Check ===
+[2026-02-08 03:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:30:02] Resources: RAM 5.1/7.8GB, Load 0.56, 0.19, 0.16
+[2026-02-08 03:30:02] === Check abgeschlossen ===
+[2026-02-08 03:30:01] === MARVIN Gemini Check ===
+[2026-02-08 03:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:30:02] Resources: RAM 5.1/7.8GB, Load 0.56, 0.19, 0.16
+[2026-02-08 03:30:02] === Check abgeschlossen ===
+[2026-02-08 03:40:01] === MARVIN Gemini Check ===
+[2026-02-08 03:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:40:01] Resources: RAM 5.2/7.8GB, Load 0.00, 0.06, 0.09
+[2026-02-08 03:40:01] === Check abgeschlossen ===
+[2026-02-08 03:40:01] === MARVIN Gemini Check ===
+[2026-02-08 03:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:40:01] Resources: RAM 5.2/7.8GB, Load 0.00, 0.06, 0.09
+[2026-02-08 03:40:01] === Check abgeschlossen ===
+[2026-02-08 03:50:02] === MARVIN Gemini Check ===
+[2026-02-08 03:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:50:02] Resources: RAM 5.2/7.8GB, Load 1.13, 0.49, 0.27
+[2026-02-08 03:50:02] === Check abgeschlossen ===
+[2026-02-08 03:50:02] === MARVIN Gemini Check ===
+[2026-02-08 03:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 03:50:02] Resources: RAM 5.2/7.8GB, Load 1.13, 0.49, 0.27
+[2026-02-08 03:50:02] === Check abgeschlossen ===
+[2026-02-08 04:00:01] === MARVIN Gemini Check ===
+[2026-02-08 04:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:00:02] Resources: RAM 5.8/7.8GB, Load 0.81, 0.47, 0.33
+[2026-02-08 04:00:02] === Check abgeschlossen ===
+[2026-02-08 04:00:01] === MARVIN Gemini Check ===
+[2026-02-08 04:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:00:02] Resources: RAM 5.8/7.8GB, Load 0.81, 0.47, 0.33
+[2026-02-08 04:00:02] === Check abgeschlossen ===
+[2026-02-08 04:10:01] === MARVIN Gemini Check ===
+[2026-02-08 04:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:10:01] Resources: RAM 5.5/7.8GB, Load 0.04, 0.19, 0.24
+[2026-02-08 04:10:01] === Check abgeschlossen ===
+[2026-02-08 04:10:01] === MARVIN Gemini Check ===
+[2026-02-08 04:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:10:01] Resources: RAM 5.5/7.8GB, Load 0.04, 0.19, 0.24
+[2026-02-08 04:10:01] === Check abgeschlossen ===
+[2026-02-08 04:20:02] === MARVIN Gemini Check ===
+[2026-02-08 04:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:20:02] Resources: RAM 5.5/7.8GB, Load 0.30, 0.22, 0.20
+[2026-02-08 04:20:02] === Check abgeschlossen ===
+[2026-02-08 04:20:02] === MARVIN Gemini Check ===
+[2026-02-08 04:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:20:02] Resources: RAM 5.5/7.8GB, Load 0.30, 0.22, 0.20
+[2026-02-08 04:20:02] === Check abgeschlossen ===
+[2026-02-08 04:30:01] === MARVIN Gemini Check ===
+[2026-02-08 04:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:30:01] Resources: RAM 5.5/7.8GB, Load 0.42, 0.25, 0.19
+[2026-02-08 04:30:01] === Check abgeschlossen ===
+[2026-02-08 04:30:01] === MARVIN Gemini Check ===
+[2026-02-08 04:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:30:01] Resources: RAM 5.5/7.8GB, Load 0.42, 0.25, 0.19
+[2026-02-08 04:30:01] === Check abgeschlossen ===
+[2026-02-08 04:40:01] === MARVIN Gemini Check ===
+[2026-02-08 04:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:40:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.09, 0.14
+[2026-02-08 04:40:01] === Check abgeschlossen ===
+[2026-02-08 04:40:01] === MARVIN Gemini Check ===
+[2026-02-08 04:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:40:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.09, 0.14
+[2026-02-08 04:40:01] === Check abgeschlossen ===
+[2026-02-08 04:50:02] === MARVIN Gemini Check ===
+[2026-02-08 04:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:50:02] Resources: RAM 5.6/7.8GB, Load 0.05, 0.05, 0.08
+[2026-02-08 04:50:02] === Check abgeschlossen ===
+[2026-02-08 04:50:02] === MARVIN Gemini Check ===
+[2026-02-08 04:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 04:50:02] Resources: RAM 5.6/7.8GB, Load 0.05, 0.05, 0.08
+[2026-02-08 04:50:02] === Check abgeschlossen ===
+[2026-02-08 05:00:01] === MARVIN Gemini Check ===
+[2026-02-08 05:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:00:01] Resources: RAM 5.5/7.8GB, Load 0.16, 0.09, 0.09
+[2026-02-08 05:00:01] === Check abgeschlossen ===
+[2026-02-08 05:00:01] === MARVIN Gemini Check ===
+[2026-02-08 05:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:00:01] Resources: RAM 5.5/7.8GB, Load 0.16, 0.09, 0.09
+[2026-02-08 05:00:01] === Check abgeschlossen ===
+[2026-02-08 05:10:01] === MARVIN Gemini Check ===
+[2026-02-08 05:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:10:01] Resources: RAM 5.5/7.8GB, Load 0.02, 0.16, 0.15
+[2026-02-08 05:10:01] === Check abgeschlossen ===
+[2026-02-08 05:10:01] === MARVIN Gemini Check ===
+[2026-02-08 05:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:10:01] Resources: RAM 5.5/7.8GB, Load 0.02, 0.16, 0.15
+[2026-02-08 05:10:01] === Check abgeschlossen ===
+[2026-02-08 05:20:02] === MARVIN Gemini Check ===
+[2026-02-08 05:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:20:02] Resources: RAM 5.5/7.8GB, Load 0.03, 0.04, 0.08
+[2026-02-08 05:20:02] === Check abgeschlossen ===
+[2026-02-08 05:20:02] === MARVIN Gemini Check ===
+[2026-02-08 05:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:20:02] Resources: RAM 5.5/7.8GB, Load 0.03, 0.04, 0.08
+[2026-02-08 05:20:02] === Check abgeschlossen ===
+[2026-02-08 05:30:01] === MARVIN Gemini Check ===
+[2026-02-08 05:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:30:01] Resources: RAM 5.5/7.8GB, Load 0.03, 0.11, 0.09
+[2026-02-08 05:30:01] === Check abgeschlossen ===
+[2026-02-08 05:30:01] === MARVIN Gemini Check ===
+[2026-02-08 05:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:30:01] Resources: RAM 5.5/7.8GB, Load 0.03, 0.11, 0.09
+[2026-02-08 05:30:01] === Check abgeschlossen ===
+[2026-02-08 05:40:02] === MARVIN Gemini Check ===
+[2026-02-08 05:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:40:02] Resources: RAM 5.5/7.8GB, Load 0.02, 0.06, 0.07
+[2026-02-08 05:40:02] === Check abgeschlossen ===
+[2026-02-08 05:40:02] === MARVIN Gemini Check ===
+[2026-02-08 05:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:40:02] Resources: RAM 5.5/7.8GB, Load 0.02, 0.06, 0.07
+[2026-02-08 05:40:02] === Check abgeschlossen ===
+[2026-02-08 05:50:01] === MARVIN Gemini Check ===
+[2026-02-08 05:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:50:01] Resources: RAM 5.4/7.8GB, Load 0.05, 0.03, 0.04
+[2026-02-08 05:50:01] === Check abgeschlossen ===
+[2026-02-08 05:50:01] === MARVIN Gemini Check ===
+[2026-02-08 05:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 05:50:01] Resources: RAM 5.4/7.8GB, Load 0.05, 0.03, 0.04
+[2026-02-08 05:50:01] === Check abgeschlossen ===
+[2026-02-08 06:00:01] === MARVIN Gemini Check ===
+[2026-02-08 06:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:00:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.02, 0.00
+[2026-02-08 06:00:01] === Check abgeschlossen ===
+[2026-02-08 06:00:01] === MARVIN Gemini Check ===
+[2026-02-08 06:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:00:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.02, 0.00
+[2026-02-08 06:00:01] === Check abgeschlossen ===
+[2026-02-08 06:10:02] === MARVIN Gemini Check ===
+[2026-02-08 06:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:10:02] Resources: RAM 5.5/7.8GB, Load 0.04, 0.15, 0.08
+[2026-02-08 06:10:02] === Check abgeschlossen ===
+[2026-02-08 06:10:02] === MARVIN Gemini Check ===
+[2026-02-08 06:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:10:02] Resources: RAM 5.5/7.8GB, Load 0.04, 0.15, 0.08
+[2026-02-08 06:10:02] === Check abgeschlossen ===
+[2026-02-08 06:20:01] === MARVIN Gemini Check ===
+[2026-02-08 06:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:20:01] Resources: RAM 5.5/7.8GB, Load 0.32, 0.28, 0.16
+[2026-02-08 06:20:01] === Check abgeschlossen ===
+[2026-02-08 06:20:01] === MARVIN Gemini Check ===
+[2026-02-08 06:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:20:01] Resources: RAM 5.5/7.8GB, Load 0.32, 0.28, 0.16
+[2026-02-08 06:20:01] === Check abgeschlossen ===
+[2026-02-08 06:30:01] === MARVIN Gemini Check ===
+[2026-02-08 06:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:30:01] Resources: RAM 5.5/7.8GB, Load 0.09, 0.07, 0.08
+[2026-02-08 06:30:01] === Check abgeschlossen ===
+[2026-02-08 06:30:01] === MARVIN Gemini Check ===
+[2026-02-08 06:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:30:01] Resources: RAM 5.5/7.8GB, Load 0.09, 0.07, 0.08
+[2026-02-08 06:30:01] === Check abgeschlossen ===
+[2026-02-08 06:40:01] === MARVIN Gemini Check ===
+[2026-02-08 06:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:40:01] Resources: RAM 5.5/7.8GB, Load 0.35, 0.13, 0.09
+[2026-02-08 06:40:01] === Check abgeschlossen ===
+[2026-02-08 06:40:01] === MARVIN Gemini Check ===
+[2026-02-08 06:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:40:01] Resources: RAM 5.5/7.8GB, Load 0.35, 0.13, 0.09
+[2026-02-08 06:40:01] === Check abgeschlossen ===
+[2026-02-08 06:50:01] === MARVIN Gemini Check ===
+[2026-02-08 06:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:50:02] Resources: RAM 5.5/7.8GB, Load 0.08, 0.06, 0.07
+[2026-02-08 06:50:02] === Check abgeschlossen ===
+[2026-02-08 06:50:01] === MARVIN Gemini Check ===
+[2026-02-08 06:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 06:50:02] Resources: RAM 5.5/7.8GB, Load 0.08, 0.06, 0.07
+[2026-02-08 06:50:02] === Check abgeschlossen ===
+[2026-02-08 07:00:01] === MARVIN Gemini Check ===
+[2026-02-08 07:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:00:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.02, 0.04
+[2026-02-08 07:00:01] === Check abgeschlossen ===
+[2026-02-08 07:00:01] === MARVIN Gemini Check ===
+[2026-02-08 07:00:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:00:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.02, 0.04
+[2026-02-08 07:00:01] === Check abgeschlossen ===
+[2026-02-08 07:10:01] === MARVIN Gemini Check ===
+[2026-02-08 07:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:10:01] Resources: RAM 5.5/7.8GB, Load 0.03, 0.03, 0.01
+[2026-02-08 07:10:01] === Check abgeschlossen ===
+[2026-02-08 07:10:01] === MARVIN Gemini Check ===
+[2026-02-08 07:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:10:01] Resources: RAM 5.5/7.8GB, Load 0.03, 0.03, 0.01
+[2026-02-08 07:10:01] === Check abgeschlossen ===
+[2026-02-08 07:20:01] === MARVIN Gemini Check ===
+[2026-02-08 07:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:20:02] Resources: RAM 5.5/7.8GB, Load 0.01, 0.02, 0.00
+[2026-02-08 07:20:02] === Check abgeschlossen ===
+[2026-02-08 07:20:01] === MARVIN Gemini Check ===
+[2026-02-08 07:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:20:02] Resources: RAM 5.5/7.8GB, Load 0.01, 0.02, 0.00
+[2026-02-08 07:20:02] === Check abgeschlossen ===
+[2026-02-08 07:30:01] === MARVIN Gemini Check ===
+[2026-02-08 07:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:30:01] Resources: RAM 5.5/7.8GB, Load 0.05, 0.06, 0.01
+[2026-02-08 07:30:01] === Check abgeschlossen ===
+[2026-02-08 07:30:01] === MARVIN Gemini Check ===
+[2026-02-08 07:30:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:30:01] Resources: RAM 5.5/7.8GB, Load 0.05, 0.06, 0.01
+[2026-02-08 07:30:01] === Check abgeschlossen ===
+[2026-02-08 07:40:01] === MARVIN Gemini Check ===
+[2026-02-08 07:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:40:01] Resources: RAM 5.5/7.8GB, Load 0.05, 0.07, 0.02
+[2026-02-08 07:40:01] === Check abgeschlossen ===
+[2026-02-08 07:40:01] === MARVIN Gemini Check ===
+[2026-02-08 07:40:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:40:01] Resources: RAM 5.5/7.8GB, Load 0.05, 0.07, 0.02
+[2026-02-08 07:40:01] === Check abgeschlossen ===
+[2026-02-08 07:50:01] === MARVIN Gemini Check ===
+[2026-02-08 07:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:50:01] Resources: RAM 5.5/7.8GB, Load 0.10, 0.08, 0.02
+[2026-02-08 07:50:01] === Check abgeschlossen ===
+[2026-02-08 07:50:01] === MARVIN Gemini Check ===
+[2026-02-08 07:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 07:50:01] Resources: RAM 5.5/7.8GB, Load 0.10, 0.08, 0.02
+[2026-02-08 07:50:01] === Check abgeschlossen ===
+[2026-02-08 08:00:02] === MARVIN Gemini Check ===
+[2026-02-08 08:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:00:02] Resources: RAM 5.5/7.8GB, Load 0.02, 0.03, 0.00
+[2026-02-08 08:00:02] === Check abgeschlossen ===
+[2026-02-08 08:00:02] === MARVIN Gemini Check ===
+[2026-02-08 08:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:00:02] Resources: RAM 5.5/7.8GB, Load 0.02, 0.03, 0.00
+[2026-02-08 08:00:02] === Check abgeschlossen ===
+[2026-02-08 08:10:01] === MARVIN Gemini Check ===
+[2026-02-08 08:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:10:01] Resources: RAM 5.5/7.8GB, Load 0.41, 0.16, 0.05
+[2026-02-08 08:10:01] === Check abgeschlossen ===
+[2026-02-08 08:10:01] === MARVIN Gemini Check ===
+[2026-02-08 08:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:10:01] Resources: RAM 5.5/7.8GB, Load 0.41, 0.16, 0.05
+[2026-02-08 08:10:01] === Check abgeschlossen ===
+[2026-02-08 08:20:01] === MARVIN Gemini Check ===
+[2026-02-08 08:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:20:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.04, 0.02
+[2026-02-08 08:20:01] === Check abgeschlossen ===
+[2026-02-08 08:20:01] === MARVIN Gemini Check ===
+[2026-02-08 08:20:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:20:01] Resources: RAM 5.5/7.8GB, Load 0.01, 0.04, 0.02
+[2026-02-08 08:20:01] === Check abgeschlossen ===
+[2026-02-08 08:30:02] === MARVIN Gemini Check ===
+[2026-02-08 08:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:30:02] Resources: RAM 5.5/7.8GB, Load 0.04, 0.07, 0.05
+[2026-02-08 08:30:02] === Check abgeschlossen ===
+[2026-02-08 08:30:02] === MARVIN Gemini Check ===
+[2026-02-08 08:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:30:02] Resources: RAM 5.5/7.8GB, Load 0.04, 0.07, 0.05
+[2026-02-08 08:30:02] === Check abgeschlossen ===
+[2026-02-08 08:40:01] === MARVIN Gemini Check ===
+[2026-02-08 08:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:40:02] Resources: RAM 5.6/7.8GB, Load 0.05, 0.03, 0.02
+[2026-02-08 08:40:02] === Check abgeschlossen ===
+[2026-02-08 08:40:01] === MARVIN Gemini Check ===
+[2026-02-08 08:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:40:02] Resources: RAM 5.6/7.8GB, Load 0.05, 0.03, 0.02
+[2026-02-08 08:40:02] === Check abgeschlossen ===
+[2026-02-08 08:50:01] === MARVIN Gemini Check ===
+[2026-02-08 08:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:50:01] Resources: RAM 5.6/7.8GB, Load 0.14, 0.10, 0.05
+[2026-02-08 08:50:01] === Check abgeschlossen ===
+[2026-02-08 08:50:01] === MARVIN Gemini Check ===
+[2026-02-08 08:50:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 08:50:01] Resources: RAM 5.6/7.8GB, Load 0.14, 0.10, 0.05
+[2026-02-08 08:50:01] === Check abgeschlossen ===
+[2026-02-08 09:00:02] === MARVIN Gemini Check ===
+[2026-02-08 09:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:00:02] Resources: RAM 5.6/7.8GB, Load 0.19, 0.12, 0.05
+[2026-02-08 09:00:02] === Check abgeschlossen ===
+[2026-02-08 09:00:02] === MARVIN Gemini Check ===
+[2026-02-08 09:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:00:02] Resources: RAM 5.6/7.8GB, Load 0.19, 0.12, 0.05
+[2026-02-08 09:00:02] === Check abgeschlossen ===
+[2026-02-08 09:10:01] === MARVIN Gemini Check ===
+[2026-02-08 09:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:10:01] Resources: RAM 5.6/7.8GB, Load 0.44, 0.12, 0.06
+[2026-02-08 09:10:01] === Check abgeschlossen ===
+[2026-02-08 09:10:01] === MARVIN Gemini Check ===
+[2026-02-08 09:10:01] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:10:01] Resources: RAM 5.6/7.8GB, Load 0.44, 0.12, 0.06
+[2026-02-08 09:10:01] === Check abgeschlossen ===
+[2026-02-08 09:20:02] === MARVIN Gemini Check ===
+[2026-02-08 09:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:20:02] Resources: RAM 5.6/7.8GB, Load 0.07, 0.07, 0.07
+[2026-02-08 09:20:02] === Check abgeschlossen ===
+[2026-02-08 09:20:02] === MARVIN Gemini Check ===
+[2026-02-08 09:20:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:20:02] Resources: RAM 5.6/7.8GB, Load 0.07, 0.07, 0.07
+[2026-02-08 09:20:02] === Check abgeschlossen ===
+[2026-02-08 09:30:01] === MARVIN Gemini Check ===
+[2026-02-08 09:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:30:02] Resources: RAM 5.6/7.8GB, Load 0.01, 0.02, 0.04
+[2026-02-08 09:30:02] === Check abgeschlossen ===
+[2026-02-08 09:30:01] === MARVIN Gemini Check ===
+[2026-02-08 09:30:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:30:02] Resources: RAM 5.6/7.8GB, Load 0.01, 0.02, 0.04
+[2026-02-08 09:30:02] === Check abgeschlossen ===
+[2026-02-08 09:40:02] === MARVIN Gemini Check ===
+[2026-02-08 09:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:40:02] Resources: RAM 5.6/7.8GB, Load 0.15, 0.17, 0.09
+[2026-02-08 09:40:02] === Check abgeschlossen ===
+[2026-02-08 09:40:02] === MARVIN Gemini Check ===
+[2026-02-08 09:40:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:40:02] Resources: RAM 5.6/7.8GB, Load 0.15, 0.17, 0.09
+[2026-02-08 09:40:02] === Check abgeschlossen ===
+[2026-02-08 09:50:01] === MARVIN Gemini Check ===
+[2026-02-08 09:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:50:02] Resources: RAM 5.4/7.8GB, Load 0.52, 0.36, 0.19
+[2026-02-08 09:50:02] === Check abgeschlossen ===
+[2026-02-08 09:50:01] === MARVIN Gemini Check ===
+[2026-02-08 09:50:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 09:50:02] Resources: RAM 5.4/7.8GB, Load 0.52, 0.36, 0.19
+[2026-02-08 09:50:02] === Check abgeschlossen ===
+[2026-02-08 10:00:01] === MARVIN Gemini Check ===
+[2026-02-08 10:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 10:00:02] Resources: RAM 5.6/7.8GB, Load 1.14, 0.48, 0.32
+[2026-02-08 10:00:02] === Check abgeschlossen ===
+[2026-02-08 10:00:01] === MARVIN Gemini Check ===
+[2026-02-08 10:00:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 10:00:02] Resources: RAM 5.6/7.8GB, Load 1.14, 0.48, 0.32
+[2026-02-08 10:00:02] === Check abgeschlossen ===
+[2026-02-08 10:10:01] === MARVIN Gemini Check ===
+[2026-02-08 10:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 10:10:02] Resources: RAM 5.7/7.8GB, Load 0.42, 0.51, 0.40
+[2026-02-08 10:10:02] === Check abgeschlossen ===
+[2026-02-08 10:10:01] === MARVIN Gemini Check ===
+[2026-02-08 10:10:02] UP: Nexus (OpenClaw), Perr00bot (Nanobot), Agent Zero, Whisper STT, Claude Prozesse
+[2026-02-08 10:10:02] Resources: RAM 5.7/7.8GB, Load 0.42, 0.51, 0.40
+[2026-02-08 10:10:02] === Check abgeschlossen ===

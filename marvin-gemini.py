@@ -25,13 +25,13 @@ HEALTH_CHECKS = {
         "name": "Nexus (OpenClaw)",
         "port": 18789,
         "check": "curl -s --max-time 3 localhost:18789/ > /dev/null",
-        "start": "pkill -f 'openclaw gateway' 2>/dev/null; sudo -u moltbot screen -X -S nexus quit 2>/dev/null; sleep 2; sudo -u moltbot screen -dmS nexus bash -c 'cd /home/moltbot && openclaw gateway --verbose --port 18789'"
+        "start": "systemctl --user restart openclaw-gateway.service"
     },
     "perr00bot": {
         "name": "Perr00bot (Nanobot)",
         "port": 0,  # Telegram-Bot
-        "check": "pgrep -u moltbot -f 'nanobot gateway' > /dev/null && sudo -u moltbot screen -ls 2>/dev/null | grep -q perr00bot",
-        "start": "pkill -9 -f 'nanobot gateway' 2>/dev/null; sleep 2; sudo -u moltbot screen -dmS perr00bot bash -c 'source /home/moltbot/.venv/bin/activate && cd /home/moltbot && nanobot gateway --verbose'"
+        "check": "pgrep -u moltbot -f 'nanobot gateway' > /dev/null",
+        "start": "pkill -9 -f 'nanobot gateway' 2>/dev/null; sleep 2; cd /home/moltbot/coach && nohup /home/moltbot/.venv/bin/nanobot gateway --port 18791 > /tmp/coach-gateway.log 2>&1 &"
     },
     "agent_zero": {
         "name": "Agent Zero",

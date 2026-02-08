@@ -105,4 +105,85 @@ Alternative: `/reset` in WhatsApp an Nexus senden.
 
 ---
 
-*Letzte Aktualisierung: 2026-02-05*
+### [2026-02-05] Gateway Compaction Timeout — 40 Min Stille
+
+**Symptom:** Nexus antwortet ~40 Minuten nicht. Nachrichten kommen an, aber keine Antwort.
+
+**Kontext:**
+- Nexus arbeitete an intensiver Aufgabe (Skill-Installation)
+- Nach Agent-Run startete Session-Compaction
+- Compaction blieb hängen/dauerte zu lange (>600s Timeout)
+- Neue Nachrichten übersprungen weil Session als "active" markiert
+
+**Log-Muster:**
+```
+Skipping auto-reply: silent token or no text/media returned from resolver
+[agent/embedded] embedded run timeout: runId=... timeoutMs=600000
+[diagnostic] run active check: sessionId=... active=true
+```
+
+**Ursache:** Session-Compaction nach langem Agent-Run bleibt stecken. 600s Timeout greift, aber Session bleibt blockiert.
+
+**Lösung:** `systemctl --user restart openclaw-gateway.service`
+
+**Vermeidung:**
+- Sessions regelmäßig kompaktieren (`/compact` im Chat)
+- Bei langen Agent-Runs: proaktiv auf Compaction-Timeout überwachen
+- Marvin: "Skipping auto-reply" > 3 in 10 Min → automatisch Gateway neustarten
+
+**Skill:** Keiner (Potenzial: compaction-watchdog)
+
+---
+
+### [2026-02-06] Zombie Gateway — Prozess läuft, Port tot
+
+**Symptom:** `pgrep` findet Gateway-Prozess, aber `curl localhost:18789` gibt Timeout.
+
+**Kontext:**
+- Gateway-Prozess existiert aber ist funktional tot
+- Port antwortet nicht trotz laufendem Prozess
+
+**Ursache:** Wahrscheinlich Speicherüberlauf oder korrupte Session. Session >5MB erhöht Risiko.
+
+**Diagnose:**
+```bash
+pgrep -f "openclaw" && ! curl -s --max-time 2 localhost:18789 > /dev/null && echo "GATEWAY HÄNGT!"
+```
+
+**Lösung:** `systemctl --user restart openclaw-gateway.service`
+
+**Vermeidung:**
+- Session-Größe monitoren (>5MB = Gefahr)
+- RAM-Nutzung überwachen
+- Bei Swap-Aktivität: Gateway präventiv neustarten
+
+**Skill:** Keiner
+
+---
+
+### [2026-02-06] Tailscale Serve Intermittent Failures
+
+**Symptom:** Gateway-Logs zeigen wiederholt: `[tailscale] serve failed: Command failed: /usr/bin/tailscale serve --bg --yes 18789`
+
+**Kontext:**
+- Gateway versucht bei jedem Start, Tailscale Serve zu aktivieren
+- Am 2026-02-06 Abend schlug dies ~3 Stunden lang fehl (20:58 - 21:59)
+- `tailscale serve status` zeigte "No serve config"
+- Ab 23:49 funktionierte es wieder (self-healed)
+
+**Ursache:** Unklar — mögliche Faktoren: Tailscale-Daemon temporär nicht im Login-State, Netzwerk-/DNS-Problem, Sudo-Berechtigung blockiert.
+
+**Lösung:** Selbstheilung nach ~3 Stunden. Bei wiederholtem Auftreten:
+```bash
+sudo tailscale serve --bg --yes 18789
+# Falls das auch fehlschlägt:
+sudo systemctl restart tailscaled
+```
+
+**Vermeidung:** Nicht vermeidbar (externer Service). Niedrige Priorität — Nexus Kernfunktionen (WhatsApp/Telegram) sind nicht betroffen. Nur Remote-Zugriff via Tailnet ist eingeschränkt.
+
+**Skill:** Keiner (low-priority, self-healing)
+
+---
+
+*Letzte Aktualisierung: 2026-02-07*
