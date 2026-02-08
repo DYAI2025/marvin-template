@@ -146,7 +146,7 @@ Diese Skills laufen automatisch via Cron:
 | Skill | Intervall | Was es macht |
 |-------|-----------|--------------|
 | `session-guard` | alle 5 Min | Erkennt `call_id` Fehler, heilt Sessions automatisch |
-| `coach-guard` | alle 5 Min | Prüft ob Perr00bot läuft, startet automatisch neu (max 3x/h) |
+| `service-guard` | alle 5 Min | Prüft Perr00bot, Whisper, TTS, Dashboard — auto-restart (max 3x/h pro Service) |
 
 **Session Guard** (`skills/session-guard/`):
 - Überwacht OpenClaw-Logs auf `call_id empty string` Fehler
@@ -158,11 +158,11 @@ Diese Skills laufen automatisch via Cron:
 ```bash
 # Manuell ausführen
 /home/moltbot/marvin/skills/session-guard/session-guard.sh
-/home/moltbot/marvin/skills/coach-guard/coach-guard.sh
+/home/moltbot/marvin/skills/service-guard/service-guard.sh
 
 # Cron-Einträge
 */5 * * * * /home/moltbot/marvin/skills/session-guard/session-guard.sh
-*/5 * * * * /home/moltbot/marvin/skills/coach-guard/coach-guard.sh
+*/5 * * * * /home/moltbot/marvin/skills/service-guard/service-guard.sh
 ```
 
 ---
