@@ -145,4 +145,46 @@ Hier sammle ich wiederkehrende Muster, die auf bestimmte Problemtypen hinweisen.
 
 ---
 
-*Letzte Aktualisierung: 2026-02-07*
+### Muster: Claude-Dispatch für Diagnostik
+
+**Symptome:**
+- Service crashed und Ursache unklar
+- Wiederholte Fehler im gleichen Service
+- Service-Guard hat bereits 3x neugestartet (Loop-Limit erreicht)
+
+**Typische Ursache:** Komplexe Fehler, die über einfachen Restart hinausgehen
+
+**Lösung:** `claude -p` spawnen für tiefere Diagnostik:
+```bash
+# RAM prüfen (braucht ~450MB)
+FREE_MB=$(free -m | awk 'NR==2{print $7}')
+if [ "$FREE_MB" -gt 500 ]; then
+  claude -p "Diagnostiziere warum $SERVICE crashed. Prüfe Logs, Config, Dependencies." \
+    --dangerously-skip-permissions --add-dir /home/moltbot > /tmp/diag-$SERVICE.md 2>&1 &
+fi
+```
+
+**Regel:** Nur spawnen wenn RAM >500MB frei UND keine andere claude -p Instanz läuft.
+
+**Früherkennung:** Service-Guard erreicht 3x Restart-Limit für denselben Service
+
+**Prävention:** Diagnostik-Report lesen und Root-Cause fixen statt nur neustarten
+
+---
+
+### Muster: LLM Dispatch Principle (<5s Regel)
+
+**Kontext:** Nicht jede Aufgabe braucht dieselbe LLM-Qualität.
+
+**Regel:**
+- Braucht User Antwort in <5s? → Günstige API (MiniMax M2.1, Gemini Flash)
+- Kein Zeitdruck? → `claude -p` über Max-Abo (kostenlos, Opus/Sonnet-Qualität)
+
+**Anwendung für Marvin:**
+- Health-Checks und einfache Restarts: kein LLM nötig (Shell-Skripte)
+- Komplexe Diagnostik nach Crashes: `claude -p` spawnen
+- Nie claude -p für Echtzeit-Chat verwenden
+
+---
+
+*Letzte Aktualisierung: 2026-02-09*
